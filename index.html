@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS Sprite</title>
+  <style type="text/css">
+    body {
+      background-color: #f1f1f1;
+    }
+    textarea.css_input {
+      width: 600px;
+      height: 200px;
+    }
+    .header_icon {
+      background: url("sprite_headers.svg") no-repeat top left;
+      width: 26px;
+      height: 24px;
+      margin: 0px 8px 3px 0;
+      background-size: 62px 2532.9px;
+    }
+    .icon_button {
+      background: url("sprite_iconbuttons_18x18.svg") no-repeat top left;
+      padding: 0;
+      margin: 3px;
+      width: 18px;
+      height: 18px;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <div><textarea id="css_input" class="css_input"></textarea></div>
+  <button id="button_generate">Generate</button>
+  <div class="root"></div>
+  <div class="root"></div>
+  <script>
+    var button = document.getElementById('button_generate');
+    var textarea = document.getElementById('css_input');
+    button.addEventListener('click', onClickButton);
+
+    function onClickButton() {
+      var cssString = textarea.value;
+      appendStyle(cssString);
+      var headerCSSArray = getHeaderClasses(cssString);
+      console.log(headerCSSArray.length);
+      var actionsCSSArray = getActionClasses(cssString);
+      console.log(actionsCSSArray.length);
+      createTable(headerCSSArray.sort(), 'header_icon');
+      createTable(actionsCSSArray.sort(), 'icon_button');
+    }
+
+    function getHeaderClasses(inputString) {
+      var regEx = /header-[_a-zA-Z0-9-]*/gm;
+      return inputString.match(regEx);
+    }
+
+    function getActionClasses(inputString) {
+      var regEx = /sprite-[_a-zA-Z0-9-]*/gm;
+      return inputString.match(regEx);
+    }
+
+    function createTable(array, cssClass) {
+      var i=0, rowEl=null,
+          tableEl = document.createElement("table");
+      for (i=0; i < array.length; i++) {
+        rowEl = tableEl.insertRow();  // DOM method for creating table rows
+        rowEl.insertCell().innerHTML = '<div class="' + cssClass + " " + array[i] + '"></div>';
+        rowEl.insertCell().textContent = array[i];
+      }
+      document.body.appendChild( tableEl);
+    }
+
+    function appendStyle(content) {
+      var style = document.createElement('style');
+      style.type = 'text/css';
+      style.innerHTML = content;
+      document.getElementsByTagName('head')[0].appendChild(style);
+    }
+  </script>
+</body>
+</html>
