@@ -1,0 +1,52 @@
+    body {
+      background-color: #FFF;
+      font-family: helvetica, arial, sans-serif;
+      font-size: 13px;
+      color: #333;
+    }
+    textarea.css_input {
+      width: 600px;
+      height: 200px;
+    }
+    .header_icon {
+      background: url(sprite_headers.svg) no-repeat top left;
+      width: 26px;
+      height: 24px;
+      margin: 0px 8px 3px 0;
+      background-size: 62px 2532.9px;
+    }
+    .icon_button {
+      background: url(sprite_iconbuttons_18x18.svg) no-repeat top left;
+      padding: 0;
+      margin: 3px;
+      width: 18px;
+      height: 18px;
+      vertical-align: top;
+    }
+    table {
+      border-collapse: collapse;
+      table-layout: fixed;
+      text-align: left;
+      width: 100%;
+    }
+    table th {
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-top: none;
+      padding: 10px;
+    }
+    table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .header_icons, .action_icons {
+      margin: 20px 10px;
+      padding: 1px 0;
+    }
+    h2 {
+      background-color: #ffe7e7;
+      border: 1px solid #ddd;
+      margin: 0;
+      padding: 16px 10px;
+      font-weight: normal;
+    }

@@ -3,80 +3,3506 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>CSS Sprite</title>
-  <style type="text/css">
-    body {
-      background-color: #f1f1f1;
-    }
-    textarea.css_input {
-      width: 600px;
-      height: 200px;
-    }
-    .header_icon {
-      background: url("sprite_headers.svg") no-repeat top left;
-      width: 26px;
-      height: 24px;
-      margin: 0px 8px 3px 0;
-      background-size: 62px 2532.9px;
-    }
-    .icon_button {
-      background: url("sprite_iconbuttons_18x18.svg") no-repeat top left;
-      padding: 0;
-      margin: 3px;
-      width: 18px;
-      height: 18px;
-      vertical-align: top;
-    }
-  </style>
+  <title>Coupa Icons</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<style type="text/css">
+
+/*   asset sprites!    */
+
+.assets-bullet_arrow_down{ background-position: -158px -2px; width: 9px; height: 16px; }
+.assets-bullet_arrow_up{ background-position: -184px -2px; width: 9px; height: 16px; }
+
+.assets-close_tour{ background-position: -251px 0; width: 17px; height: 34px; }
+.assets-tour_sign{ background-position: -126px -68px; width: 25px; height: 28px; }
+.assets-x_table{ background-position: -172px -78px; width: 7px; height: 7px; }
+
+/*   header icon sprites!    */
+
+.header-additional-settings{ background-position: -15px -1012px; }
+.header-address,
+.header-shipping{ background-position: -19px -367px; width: 17px; }
+.header-alerts{ background-position: -15px -1654px; }
+.header-approval{ background-position: -15px -207px; }
+.header-business-partner,
+.header-content-groups{ background-position: -15px -782px; }
+.header-attachments{ background-position: -14px -1745px; }
+.header-budgets{ background-position: -15px -551px; }
+.header-buyOnline{ background-position: -15px -160px; }
+.header-cart{ background-position: -15px -300px; }
+.header-chat{ background-position: -15px -1931px; width: 25px; }
+.header-clipboard{ background-position: -18px -115px; width: 21px; }
+.header-comments{ background-position: -15px -1931px; width: 25px; }
+.header-compare{ background-position: -15px -1563px; }
+.header-competitive-chart{ background-position: -15px -1056px; }
+.header-contracts{ background-position: -15px -1240px; }
+.header-credit_card{ background-position: -14px -415px; width: 24px; }
+.header-cxml{ background-position: -15px -873px; width: 19px; }
+.header-documents{ background-position: -18px -597px; width: 19px; }
+.header-event-details,
+.header-contract-details,
+.header-supplier-details{ background-position: -14px -550px; }
+.header-event-items-and-lots,
+.header-items{ background-position: -14px -1702px; }
+.header-event-questionnaires{ background-position: -14px -1793px; width: 21px; height: 25px; }
+.header-event-timeline{ background-position: -14px -965px; }
+.header-event-type{ background-position: -14px -643px; }
+.header-financials{ background-position: -14px -550px; }
+.header-history{ background-position: -14px -1840px; }
+.header-info{ background-position: -15px -1608px; }
+.header-invoice-inbox{ background-position: -15px -1102px; }
+.header-invoicing{ background-position: -15px -1335px; }
+.header-groups-and-tasks{ background-position: -14px -1702px; }
+.header-lines{ background-position: -15px -325px; }
+.header-message{ background-position: -14px -22px; }
+.header-payments{ background-position:  -14px -415px; width: 24px; }
+.header-po-transmission{ background-position: -14px -643px; }
+.header-pricing-and-terms{ background-position: -14px -504px; }
+.header-recentOrders{ background-position: -15px -69px; }
+.header-reportHeader{ background-position: -15px -252px; }
+.header-reportsHeader{ background-position: -15px -252px; }
+.header-requisitions{ background-position: -15px -68px; }
+.header-responses{ background-position: -15px -1150px; }
+.header-score-weights{ background-position: -14px -736px; }
+.evaluation-weights{ background-position: -14px -1745px; }
+.header-supplier{ background-position: -15px -828px; width: 16px; }
+.header-terms-and-conditions{ background-position: -14px -504px; }
+.header-toDos{ background-position: -15px -115px; }
+.header-with-status{ background-position: -15px -458px; }
+.header-suitcase_white{ background-position: -19px -367px; width: 17px; }
+.header-performance-management{ background-position: -14px -2036px; }
+.num_comments{ background-position: -14px -1930px; width: 30px; }
+.header-benchmark-savings{ background-position: -14px -2130px; }
+.header-benchmark-efficiency{ background-position: -14px -2176px; }
+.header-benchmark-usage{ background-position: -14px -2220px; }
+.header-pending-recommendations{ background-position: -14px -2268px; }
+.header-completed-recommendations{ background-position: -14px -2320px; }
+.header-services{
+  background-position: -17px -2400px;
+}
+.header-timesheet{
+  background-position: -18px -2447px;
+}
+.header-supplier-rating{
+  background-position: -17px -2358px;
+}
+
+/*   icon sprites!    */
+.sprite-accept{
+  background-position: -756px -180px;
+}
+.sprite-accept_small{
+  background-position: -433px -307px;
+  width: 16px;
+  height: 16px;
+}
+.sprite-add{
+  background-position: -108px -54px;
+}
+.sprite-add_small {
+  background-position: -73px -307px;
+  width:16px;
+  height:16px;
+}
+.sprite-add_bw{
+  background-position: -288px -360px;
+}
+.sprite-anchor{
+  background-position: -36px -216px;
+}
+.sprite-application-form{
+  background-position: -72px -216px;
+}
+.sprite-application_form{
+  background-position: -144px -216px;
+}
+.sprite-application_form_delete{
+  background-position: -108px -216px;
+}
+.sprite-applications-blue{
+  background-position: -180px -216px;
+}
+.sprite-arrow_down_gray{
+  background-position: -252px -180px;
+}
+.sprite-arrow_left{
+  background-position: 0 -252px;
+}
+.sprite-arrow_left_gray{
+  background-position: -216px -180px;
+}
+.sprite-arrow_refresh{
+  background-position: -216px -216px;
+}
+.sprite-arrow_right{
+  background-position: -252px -216px;
+}
+.sprite-arrow_right_gray{
+  background-position: -180px -180px;
+}
+.sprite-arrow_rotate_right {
+  background-position: -540px -216px;
+}
+.sprite-expanded_section {
+  background-position: -1296px -252px;
+}
+.sprite-collapsed_section {
+  background-position: -1332px -252px;
+}
+
+.sprite-restore {
+  background-position: -792px -144px;
+}
+.sprite-arrow_split{
+  background-position: 0 -108px;
+}
+.sprite-account_split{
+  background-position: -360px -216px;
+}
+.sprite-account_split_add{
+  background-position: -324px -216px;
+}
+.sprite-account_split_edit{
+  background-position: -576px -252px;
+}
+.sprite-arrow_undo {
+  background-position: -216px -18px;
+}
+.sprite-arrow_undo_bw{
+  background-position: -180px -360px;
+}
+.sprite-arrow_up_gray{
+  background-position: -288px -180px;
+}
+.sprite-gauge{
+  background-position: -540px -360px;
+}
+.sprite-asterisk_orange{
+  background-position: -36px -108px;
+}
+.sprite-attach{
+  background-position: -72px -108px;
+}
+.sprite-basket{
+  background-position: -108px -108px;
+}
+
+.sprite-supplier-item-association {
+  background-position: -650px -215px;
+}
+.sprite-bell{
+  background-position: -144px -108px;
+}
+.sprite-bell_add{
+  background-position: -180px -108px;
+}
+
+.sprite-bell_remove {
+  background-position: -1548px -216px;
+  width: 18px;
+  height: 19px;
+}
+.sprite-blank_box{
+  background-position: -288px -252px;
+}
+.sprite-bullet_go{
+  background-position: -252px -108px;
+}
+.sprite-bullseye{
+  background-position: -288px -108px;
+}
+.sprite-calculator{
+  background-position: -324px -108px;
+}
+.sprite-calendar_add{
+  background-position: -360px -108px;
+}
+.sprite-cart_delete{
+  background-position: -504px -216px;
+}
+.sprite-cart_edit{
+  background-position: -72px -54px;
+}
+.sprite-cart_go{
+  background-position: -36px -54px;
+}
+.sprite-chart_organisation{
+  background-position: -432px -108px;
+}
+.sprite-chart_organisation_small{
+  background-position: -288px -306px;
+}
+.sprite-cog{
+  background-position: -720px -180px;
+}
+.sprite-cog_go{
+  background-position: -468px -252px;
+}
+.sprite-coins{
+  background-position: -36px -18px;
+}
+.sprite-coins_cn{
+  background-position: -72px -18px;
+}
+.sprite-comment{
+  background-position: -432px -180px;
+}
+.sprite-comment_add{
+  background-position: -468px -108px;
+}
+.sprite-comment_transparent{
+  background-position: -756px -252px;
+}
+.sprite-connect{
+  background-position: -504px -108px;
+}
+.sprite-connecting{
+  background-position: -540px -108px;
+}
+.sprite-creditcards{
+  background-position: -576px -108px;
+}
+.sprite-cross{
+  background-position: -324px -18px;
+}
+.button img.sprite-delete,
+.sprite-delete_small,.sprite-cross_small {
+  background-position: -109px -307px;
+}
+.sprite-delete,
+.sprite-delete_large {
+  background-position: -324px -18px;
+  width: 20px;
+  height: 19px;
+}
+.sprite-delete_bw{
+  background-position: -144px -360px;
+}
+.sprite-disk {
+  background-position: -144px -252px;
+}
+.sprite-disk_small {
+  background-position: -253px -307px;
+  width: 16px;
+  height: 16px;
+}
+.sprite-door_in{
+  background-position: -288px -18px;
+}
+.sprite-email{
+  background-position: -288px -54px;
+}
+.sprite-email_edit{
+  background-position: -360px -54px;
+}
+.sprite-email_go{
+  background-position: -108px -18px;
+}
+.sprite-email_go_bw{
+  background-position: -324px -360px;
+}
+.sprite-email_blocked{
+  background-position: -540px -54px;
+}
+.sprite-error{
+  background-position: -612px -108px;
+}
+.sprite-exclamation{
+  background-position: -648px -108px;
+}
+.sprite-grid{
+  background-position: -540px -180px;
+}
+.sprite-group{
+  background-position: -504px -19px;
+}
+.sprite-keyboard{
+  background-position: -396px -180px;
+}
+.sprite-key_go{
+  background-position: -396px -54px;
+}
+.sprite-layers{
+  background-position: -180px -144px;
+}
+.sprite-lightning_go{
+  background-position: -288px -54px;
+}
+.sprite-lines{
+  background-position: -216px -144px;
+}
+.sprite-link{
+  background-position: -252px -144px;
+}
+/* icon color is too light */
+.sprite-list{
+  background-position: -576px -180px;
+}
+.sprite-lock, .sprite-no_self_approval_allowed{
+  background-position: -468px -180px;
+}
+.sprite-lock_go{
+  background-position: -288px -144px;
+}
+.sprite-lorry{
+  background-position: -144px -18px;
+}
+.sprite-lorry_bw{
+  background-position: -72px -360px;
+}
+.sprite-magnifier{
+  background-position: -324px -144px;
+}
+.sprite-magnifier_small, .sprite-magnifier_small_grey{
+  background-position: -397px -307px;
+  width: 16px;
+  height: 16px;
+}
+.sprite-magnifier_small_grey{
+  background-position: -361px -361px;
+}
+.sprite-medal_gold_3{
+  background-position: -216px -54px;
+}
+.sprite-minus{
+  background-position: -72px -180px;
+}
+.sprite-money{
+  background-position: -360px -144px;
+}
+.sprite-money_add{
+  background-position: -396px -144px;
+}
+.sprite-note{
+  background-position: -432px -144px;
+}
+.sprite-package{
+  background-position: -180px -54px;
+}
+.sprite-package_add{
+  background-position: -144px -54px;
+}
+.sprite-page_add{
+  background-position: -252px -54px;
+}
+.sprite-page_code{
+  background-position: -468px -144px;
+}
+.sprite-page_copy{
+  background-position: -360px -18px;
+}
+.sprite-page_copy_bw{
+  background-position: -0 -360px;
+}
+.sprite-page_excel{
+  background-position: -504px -144px;
+}
+.sprite-page_white_acrobat{
+  background-position: -540px -144px;
+}
+.sprite-page_word{
+  background-position: -576px -144px;
+}
+.sprite-pencil{
+  background-position: -180px -18px;
+}
+.sprite-pencil_bw{
+  background-position: -252px -360px;
+}
+.sprite-pencil_small{
+  background-position: -199px -307px;
+  width: 16px;
+  height: 16px;
+}
+.sprite-price_tier{
+  background-position: -108px -180px;
+}
+.sprite-printer{
+  background-position: 0 -18px;
+}
+.sprite-printer_small {
+  background-position: -325px -307px;
+  width: 16px;
+  height: 16px;
+}
+/* icon used for "release booking hold". May have different meaning in other locations */
+.sprite-stop{
+  background-position: -612px -144px;
+}
+.sprite-table_go{
+  background-position: -648px -144px;
+}
+.sprite-table_sort{
+  background-position: -684px -144px;
+}
+.sprite-tag_blue{
+  background-position: -684px -108px;
+}
+.sprite-tag_blue_add{
+  background-position: -720px -108px;
+}
+.sprite-tag_blue_add{
+  background-position: -720px -108px;
+}
+.sprite-tag_red{
+  background-position: -756px -108px;
+}
+.sprite-thumb_up{
+  background-position: 0 -144px;
+}
+.sprite-tick, .sprite-approved{
+  background-position: -36px -144px;
+}
+.sprite-time{
+  background-position: -72px -144px;
+}
+.sprite-transmit{
+  background-position: -108px -144px;
+}
+.sprite-tripit{
+  background-position: -144px -180px;
+}
+.sprite-twitter{
+  background-position: -144px -144px;
+}
+.sprite-upgrade{
+  background-position: -576px -54px;
+}
+.sprite-user, .sprite-user_w{
+  background-position: -432px -18px;
+}
+.sprite-user_add{
+  background-position: -468px -18px;
+}
+.sprite-user_comment{
+  background-position: -396px -180px;
+}
+.sprite-user_go{
+  background-position: -396px -18px;
+}
+.sprite-user_green{
+  background-position: -540px -18px;
+}
+.sprite-wand{
+  background-position: -468px -216px;
+}
+.sprite-world_go{
+  background-position: -252px -18px;
+}
+.sprite-wrench{
+  background-position: -72px -54px;
+}
+.sprite-zoom{
+  background-position: -324px -144px;
+}
+.sprite-zoom_in {
+  background-position: -324px -180px;
+}
+.sprite-zoom_out {
+  background-position: -360px -180px;
+}
+.sprite-escalated{
+  background-position: 0 -180px;
+}
+.sprite-folder_open{
+  background-position: -36px -180px;
+}
+.sprite-clipboard {
+  background-position: 0 -54px;
+}
+.sprite-sourcing {
+  background-position: -612px -180px;
+}
+.sprite-white_star {
+  background-position: -108px -360px;
+}
+.sprite-black_star {
+  background-position: -648px -180px;
+}
+.sprite-lock_blue, .sprite-lock_gray {
+  background-position: -36px -360px;
+}
+.sprite-visible{
+  background-position: -432px -54px;
+}
+.sprite-invisible{
+  background-position: -216px -360px;
+}
+.sprite-pending_approval {
+  background-position: -360px -252px;
+}
+.sprite-info {
+  background-position: -612px -252px;
+}
+.sprite-collapsable {
+  background-position: -396px -430px;
+}
+.sprite-msa {
+  background-position: -1152px -252px;
+}
+.sprite-master {
+  background-position: -1188px -249px;
+}
+.sprite-amendment {
+  background-position: -1224px -252px;
+}
+.sprite-contract {
+  background-position: -1260px -252px;
+}
+.sprite-contract_parent_approved {
+  background-position: -1224px -144px;
+}
+.sprite-contract_child_approved {
+  background-position: -1260px -144px;
+}
+.sprite-contract_amendment_approved {
+  background-position: -1296px -144px;
+}
+.sprite-contract_parent_pending_approval {
+  background-position: -1330px -144px;
+}
+.sprite-contract_child_pending_approval {
+  background-position: -1368px -144px;
+}
+.sprite-contract_amendment_pending_approval {
+  background-position: -1404px -144px;
+}
+.sprite-contract_amendment_pending_signatures, .sprite-contract_parent_pending_signatures, .sprite-contract_child_pending_signatures {
+  background-position: -1440px -144px;
+}
+.sprite-contract_parent_draft {
+  background-position: -1368px -216px;
+}
+.sprite-contract_child_draft {
+  background-position: -1404px -216px;
+}
+.sprite-contract_amendment_draft {
+  background-position: -1440px -216px;
+}
+.sprite-contract_parent_published {
+  background-position: -1188px -252px;
+}
+.sprite-contract_child_published {
+  background-position: -1224px -252px;
+}
+.sprite-contract_amendment_published {
+  background-position: -1260px -252px;
+}
+.sprite-contract_parent_completed {
+  background-position: -1330px -180px;
+}
+.sprite-contract_child_completed {
+  background-position: -1368px -180px;
+}
+.sprite-contract_amendment_completed {
+  background-position: -1404px -180px;
+}
+.sprite-contract_parent_expired {
+  background-position: -1260px -180px;
+}
+.sprite-contract_child_expired {
+  background-position: -1296px -180px;
+}
+.sprite-info_add {
+  background-position: -504px -252px;
+}
+.sprite-invoicesmash {
+  background-position: -612px -54px;
+}
+.sprite-inbox-move {
+  background-position: -1152px -180px;
+}
+.sprite-magic {
+  background-position: -468px -216px;
+}
+.sprite-magic_add {
+  background-position: -432px -216px;
+}
+.sprite-vertical_split{
+  background-position: -360px -216px;
+}
+.sprite-vertical_split_edit{
+  background-position: -576px -252px;
+}
+.sprite-application_view_detail, .sprite-table {
+  background-position: -144px -216px;
+}
+.sprite-quantity_deliverable{
+  background-position: -864px -216px;
+}
+.sprite-amount_deliverable{
+  background-position: -936px -216px;
+}
+.sprite-resource{
+  background-position: -900px -216px;
+}
+.sprite-items_not_in_lots{
+  background-position: -684px -180px;
+}
+.sprite-page_blank {
+  background-position: -648px -252px;
+}
+.sprite-enabled {
+  background-position: -576px -18px;
+}
+.sprite-disabled {
+  background-position: -612px -18px;
+}
+.sprite-po-for-wc {
+  background-position: -648px -18px;
+}
+.sprite-po-soft-close {
+  background-position: -684px -18px;
+}
+.sprite-po-reopen {
+  background-position: -720px -18px;
+}
+.sprite-po-invoice-stop {
+  background-position: -756px -18px;
+}
+.sprite-po-release-invoice-stop {
+  background-position: -792px -18px;
+}
+.sprite-arrow_void {
+  background-position: -324px -54px;
+}
+.sprite-cycle_back {
+  background-position: -504px -54px;
+}
+.sprite-tick-gray {
+  background-position: -468px -360px;
+}
+
+.sprite-external_update {
+  background-position: -108px -18px;
+}
+.sprite-internal_update {
+  background-position: -216px -216px;
+}
+.sprite-request_review {
+  background-position: -1224px -180px;
+}
+
+.sprite-check-gray {
+  background-position: -504px -363px;
+}
+
+.sprite-health_rating3 {
+  background-position: -936px -252px;
+}
+
+.sprite-health_rating2 {
+  background-position: -972px -252px;
+}
+
+.sprite-health_rating1 {
+  background-position: -1008px -252px;
+}
+
+.sprite-no {
+  background-position: -1080px -252px;
+}
+
+.sprite-health_rating0 {
+  background-position: -1116px -252px;
+}
+
+.sprite-coupa-advantage {
+  background-position: -1260px -108px;
+}
+
+.sprite-existing-relationships {
+  background-position: -1297px -108px;
+}
+
+.sprite-ship-to {
+  background-position: -1332px -108px;
+}
+
+.sprite-supplier-items-explorer {
+  background-position: -1367px -108px;
+}
+
+.sprite-operational-insights {
+  background-position: -1476px -216px;
+}
+
+.sprite-contract-changed-flag, .sprite-field-changed-flag {
+  background-position: -398px -214px;
+}
+
+.sprite-red-flag {
+  background-position: -1404px -108px
+}
+
+.sprite-pop-out {
+  background-position: -1440px -108px;
+}
+
+.sprite-create_ro {
+  background-position: -1440px -251px;
+}
+
+.sprite-checkbox-disabled {
+  background-position: -1512px -184px;
+}
+
+.sprite-checkbox-selected {
+  background-position: -1512px -148px;
+}
+
+.sprite-checkbox {
+  background-position: -1512px -110px;
+}
+
+.sprite-circled-checkmark {
+  background-position: -1548px -180px;
+}
+
+.sprite-searchable-punchout {
+  background-position: -1512px -216px;
+}
+
+.sprite-drag_handle {
+  background-position: -37px -307px;
+}
+
+/* icon not used anywhere */
+.sprite-briefcase{ background: image-url("sprite_iconbuttons.png") no-repeat -399px 0; width: 16px; height: 16px; }
+/* icon missing in new sprite */
+.sprite-cart_put{ background: image-url("sprite_iconbuttons.png") no-repeat -567px 0; width: 16px; height: 16px; }
+.sprite-email_open{ background: image-url("sprite_iconbuttons.png") no-repeat -924px 0; width: 16px; height: 16px; }
+.sprite-lock_break{ background: image-url("sprite_iconbuttons.png") no-repeat -2213px 0; width: 16px; height: 16px; }
+
+/* Perfect Fit Insights - Industry sprites */
+.industry-icon {
+   background: image-url("sprite_analytics_display.svg") no-repeat top left;
+   padding:0;
+}
+
+.all-industries{ background-position: -1px -1px; width: 60px; height: 60px; }
+.business-services{ background-position: -121px -1px; width: 60px; height: 60px; }
+.com-media{ background-position: -361px -1px; width: 60px; height: 60px; }
+.education{ background-position: -121px -1px; width: 60px; height: 60px; }
+.finance-services{ background-position: -481px -1px; width: 60px; height: 60px; }
+.food-bev{ background-position: -601px -1px; width: 60px; height: 60px; }
+.health-life-sci{ background-position: -721px -1px; width: 60px; height: 60px; }
+.high-tech{ background-position: -841px -1px; width: 60px; height: 60px; }
+.travel-hospitality{ background-position: -961px -1px; width: 60px; height: 60px; }
+.retail{ background-position: -1px -121px; width: 60px; height: 60px; }
+.public-sector{ background-position: -121px -121px; width: 60px; height: 60px; }
+.oil-gas{ background-position: -241px -121px; width: 60px; height: 60px; }
+.mfg-mining{ background-position: -361px -121px; width: 60px; height: 60px; }
+.mfg{ background-position: -361px -121px; width: 60px; height: 60px; }
+.education-public-sector{ background-position: -121px -1px; width: 60px; height: 60px; }
+.ci-topX { background-position: -961px -121px; width: 60px; height: 60px; }
+.ci-single { background-position: -841px -121px; width: 60px; height: 60px; }
+
+.opportunity-trigger-sprite {
+  background: image-url("trigger_icons.svg") no-repeat 0px 0px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+
+  &.opportunity_trigger_contract_expiration { background-position: 0px -671px; }
+  &.opportunity_trigger_increased_spend { background-position: 0px -503px; }
+  &.opportunity_trigger_frequent_free_form { background-position: 0px -615px; }
+  &.opportunity_trigger_invoice_increase { background-position: 0px -503px; }
+  &.opportunity_trigger_large_requisition { background-position: 0px -783px; }
+  &.opportunity_trigger_increased_expenses_by_merchant { background-position: 0px -503px; }
+  &.opportunity_trigger_increased_expenses_by_category { background-position: 0px -503px; }
+
+  &.inventory_opportunity_trigger_frequent_orders { background-position: 0px -783px; }
+  &.inventory_opportunity_trigger_frequent_adjustments { background-position: 0px -559px; }
+
+  &.opportunity_trigger_inactive_supplier { background-position: 0px -335px; }
+  &.opportunity_trigger_expiring_forms { background-position: 0px -391px; }
+  &.opportunity_trigger_outdated_sim { background-position: 0px -447px; }
+  &.opportunity_trigger_supplier_link_suggestion { background-position: 0px -2072px; }
+
+  &.opportunity_trigger_supplier_risk { background-position: 0px 0px;}
+  &.opportunity_trigger_supplier_performance { background-position: 0px 0px;}
+}
+
+//compliance logos
+.invoice-compliance-sprite {
+  background: image-url("trigger_icons.svg") no-repeat 0px 0px;
+  width: 50px;
+  height: 43px;
+  display: inline-block;
+
+  &.compliant2_2Icon42 { background-position: 0px -2015px }
+  &.compliant2_2Icon130 { background-position: -4px -1847px }
+  &.compliant2_3Icon42 { background-position: 0px -1763px }
+  &.compliant2_3Icon130 { background-position: -4px -1343px }
+  &.compliant3_3Icon42 { background-position: 0px -1679px }
+  &.compliant3_3Icon130 { background-position: -4px -1175px }
+  &.compliant3_4Icon42 { background-position: 0px -1595px }
+  &.compliant3_4Icon130 { background-position: -4px -1007px }
+  &.compliant4_4Icon42 { background-position: 0px -1511px }
+  &.compliant4_4Icon130 { background-position: -4px -839px }
+  &.compliant1Icon42, &.compliant1Icon130 { background-position: 0px 50px }
+}
+
+.fraud_risk_sprite {
+  background: image-url("trigger_icons.svg") no-repeat 0px 0px;
+  width: 60px;
+  height: 60px;
+  &.global {
+    background-position: -5px -3980px;
+    width: 71px;
+  }
+  &.users { background-position: -7px -2492px; }
+  &.lines { background-position: -3px -2409px; }
+}
+.search-icon-sprite {
+  background: image-url('trigger_icons.svg') no-repeat 0px 0px;
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+
+  &.magnifier_icon_large {
+    background-position: 0px -2856px;
+  }
+}
+.employee_spend_view_sprite,
+.spend_guard_global_sprite {
+  background: image-url('trigger_icons.svg') no-repeat 0px 0px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  &.expense_lines { background-position: 13px -3037px; }
+  &.expenses, &.expense_reports { background-position: 7px -3094px; }
+  &.requisitions { background-position: 3px -3260px }
+  &.purchase_orders { background-position: 3px -3202px; }
+  &.invoices { background-position: 3px -3142px; }
+  &.contracts { background-position: 3px -3326px; }
+  &.sourcing_events { background-position: 5px -3390px; }
+}
+
+.employee_spend_view_avatar_sprite {
+  background: image-url('trigger_icons.svg') no-repeat 0px 0px;
+  width: 80px;
+  height: 80px;
+  &.avatar { background-position: 2px -3880px; }
+}
+
+.spend_profile_sprite {
+  background: image-url('trigger_icons.svg') no-repeat 0px 0px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: inline-block;
+  &.expenses { background-position: -60px -111px; }
+  &.requisitions { background-position: -60px -223px; }
+  &.purchase_orders { background-position: -60px -167px; }
+  &.invoices { background-position: -60px -279px; }
+}
+</style>
 </head>
 <body>
-  <div><textarea id="css_input" class="css_input"></textarea></div>
-  <button id="button_generate">Generate</button>
-  <div class="root"></div>
-  <div class="root"></div>
-  <script>
-    var button = document.getElementById('button_generate');
-    var textarea = document.getElementById('css_input');
-    button.addEventListener('click', onClickButton);
-
-    function onClickButton() {
-      var cssString = textarea.value;
-      appendStyle(cssString);
-      var headerCSSArray = getHeaderClasses(cssString);
-      console.log(headerCSSArray.length);
-      var actionsCSSArray = getActionClasses(cssString);
-      console.log(actionsCSSArray.length);
-      createTable(headerCSSArray.sort(), 'header_icon');
-      createTable(actionsCSSArray.sort(), 'icon_button');
-    }
-
-    function getHeaderClasses(inputString) {
-      var regEx = /header-[_a-zA-Z0-9-]*/gm;
-      return inputString.match(regEx);
-    }
-
-    function getActionClasses(inputString) {
-      var regEx = /sprite-[_a-zA-Z0-9-]*/gm;
-      return inputString.match(regEx);
-    }
-
-    function createTable(array, cssClass) {
-      var i=0, rowEl=null,
-          tableEl = document.createElement("table");
-      for (i=0; i < array.length; i++) {
-        rowEl = tableEl.insertRow();  // DOM method for creating table rows
-        rowEl.insertCell().innerHTML = '<div class="' + cssClass + " " + array[i] + '"></div>';
-        rowEl.insertCell().textContent = array[i];
-      }
-      document.body.appendChild( tableEl);
-    }
-
-    function appendStyle(content) {
-      var style = document.createElement('style');
-      style.type = 'text/css';
-      style.innerHTML = content;
-      document.getElementsByTagName('head')[0].appendChild(style);
-    }
-  </script>
+  <div class="header_icons">
+    <h2>Header Icons</h2>
+    <table class="header_icons_table">
+      <thead>
+        <tr>
+          <th>Icon</th>
+          <th>CSS Class Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-additional-settings"></div>
+          </td>
+          <td>header-additional-settings</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-address"></div>
+          </td>
+          <td>header-address</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-alerts"></div>
+          </td>
+          <td>header-alerts</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-approval"></div>
+          </td>
+          <td>header-approval</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-attachments"></div>
+          </td>
+          <td>header-attachments</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-benchmark-efficiency"></div>
+          </td>
+          <td>header-benchmark-efficiency</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-benchmark-savings"></div>
+          </td>
+          <td>header-benchmark-savings</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-benchmark-usage"></div>
+          </td>
+          <td>header-benchmark-usage</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-budgets"></div>
+          </td>
+          <td>header-budgets</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-business-partner"></div>
+          </td>
+          <td>header-business-partner</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-buyOnline"></div>
+          </td>
+          <td>header-buyOnline</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-cart"></div>
+          </td>
+          <td>header-cart</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-chat"></div>
+          </td>
+          <td>header-chat</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-clipboard"></div>
+          </td>
+          <td>header-clipboard</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-comments"></div>
+          </td>
+          <td>header-comments</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-compare"></div>
+          </td>
+          <td>header-compare</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-competitive-chart"></div>
+          </td>
+          <td>header-competitive-chart</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-completed-recommendations"></div>
+          </td>
+          <td>header-completed-recommendations</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-content-groups"></div>
+          </td>
+          <td>header-content-groups</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-contract-details"></div>
+          </td>
+          <td>header-contract-details</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-contracts"></div>
+          </td>
+          <td>header-contracts</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-credit_card"></div>
+          </td>
+          <td>header-credit_card</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-cxml"></div>
+          </td>
+          <td>header-cxml</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-documents"></div>
+          </td>
+          <td>header-documents</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-event-details"></div>
+          </td>
+          <td>header-event-details</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-event-items-and-lots"></div>
+          </td>
+          <td>header-event-items-and-lots</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-event-questionnaires"></div>
+          </td>
+          <td>header-event-questionnaires</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-event-timeline"></div>
+          </td>
+          <td>header-event-timeline</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-event-type"></div>
+          </td>
+          <td>header-event-type</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-financials"></div>
+          </td>
+          <td>header-financials</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-groups-and-tasks"></div>
+          </td>
+          <td>header-groups-and-tasks</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-history"></div>
+          </td>
+          <td>header-history</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-info"></div>
+          </td>
+          <td>header-info</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-invoice-inbox"></div>
+          </td>
+          <td>header-invoice-inbox</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-invoicing"></div>
+          </td>
+          <td>header-invoicing</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-items"></div>
+          </td>
+          <td>header-items</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-lines"></div>
+          </td>
+          <td>header-lines</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-message"></div>
+          </td>
+          <td>header-message</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-payments"></div>
+          </td>
+          <td>header-payments</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-pending-recommendations"></div>
+          </td>
+          <td>header-pending-recommendations</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-performance-management"></div>
+          </td>
+          <td>header-performance-management</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-po-transmission"></div>
+          </td>
+          <td>header-po-transmission</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-pricing-and-terms"></div>
+          </td>
+          <td>header-pricing-and-terms</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-recentOrders"></div>
+          </td>
+          <td>header-recentOrders</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-reportHeader"></div>
+          </td>
+          <td>header-reportHeader</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-reportsHeader"></div>
+          </td>
+          <td>header-reportsHeader</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-requisitions"></div>
+          </td>
+          <td>header-requisitions</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-responses"></div>
+          </td>
+          <td>header-responses</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-score-weights"></div>
+          </td>
+          <td>header-score-weights</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-services"></div>
+          </td>
+          <td>header-services</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-shipping"></div>
+          </td>
+          <td>header-shipping</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-suitcase_white"></div>
+          </td>
+          <td>header-suitcase_white</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-supplier"></div>
+          </td>
+          <td>header-supplier</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-supplier-details"></div>
+          </td>
+          <td>header-supplier-details</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-supplier-rating"></div>
+          </td>
+          <td>header-supplier-rating</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-terms-and-conditions"></div>
+          </td>
+          <td>header-terms-and-conditions</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-timesheet"></div>
+          </td>
+          <td>header-timesheet</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-toDos"></div>
+          </td>
+          <td>header-toDos</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="header_icon header-with-status"></div>
+          </td>
+          <td>header-with-status</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="action_icons">
+    <h2>Action Icons</h2>
+    <table class="action_icons_table">
+      <thead>
+        <tr>
+          <th>Icon</th>
+          <th>CSS Class Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-accept"></div>
+          </td>
+          <td>sprite-accept</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-accept_small"></div>
+          </td>
+          <td>sprite-accept_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-account_split"></div>
+          </td>
+          <td>sprite-account_split</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-account_split_add"></div>
+          </td>
+          <td>sprite-account_split_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-account_split_edit"></div>
+          </td>
+          <td>sprite-account_split_edit</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-add"></div>
+          </td>
+          <td>sprite-add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-add_bw"></div>
+          </td>
+          <td>sprite-add_bw</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-add_small"></div>
+          </td>
+          <td>sprite-add_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-amendment"></div>
+          </td>
+          <td>sprite-amendment</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-amount_deliverable"></div>
+          </td>
+          <td>sprite-amount_deliverable</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-anchor"></div>
+          </td>
+          <td>sprite-anchor</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-application-form"></div>
+          </td>
+          <td>sprite-application-form</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-application_form"></div>
+          </td>
+          <td>sprite-application_form</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-application_form_delete"></div>
+          </td>
+          <td>sprite-application_form_delete</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-application_view_detail"></div>
+          </td>
+          <td>sprite-application_view_detail</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-applications-blue"></div>
+          </td>
+          <td>sprite-applications-blue</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-approved"></div>
+          </td>
+          <td>sprite-approved</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_down_gray"></div>
+          </td>
+          <td>sprite-arrow_down_gray</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_left"></div>
+          </td>
+          <td>sprite-arrow_left</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_left_gray"></div>
+          </td>
+          <td>sprite-arrow_left_gray</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_refresh"></div>
+          </td>
+          <td>sprite-arrow_refresh</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_right"></div>
+          </td>
+          <td>sprite-arrow_right</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_right_gray"></div>
+          </td>
+          <td>sprite-arrow_right_gray</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_rotate_right"></div>
+          </td>
+          <td>sprite-arrow_rotate_right</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_split"></div>
+          </td>
+          <td>sprite-arrow_split</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_undo"></div>
+          </td>
+          <td>sprite-arrow_undo</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_undo_bw"></div>
+          </td>
+          <td>sprite-arrow_undo_bw</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_up_gray"></div>
+          </td>
+          <td>sprite-arrow_up_gray</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-arrow_void"></div>
+          </td>
+          <td>sprite-arrow_void</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-asterisk_orange"></div>
+          </td>
+          <td>sprite-asterisk_orange</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-attach"></div>
+          </td>
+          <td>sprite-attach</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-basket"></div>
+          </td>
+          <td>sprite-basket</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-bell"></div>
+          </td>
+          <td>sprite-bell</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-bell_add"></div>
+          </td>
+          <td>sprite-bell_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-bell_remove"></div>
+          </td>
+          <td>sprite-bell_remove</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-black_star"></div>
+          </td>
+          <td>sprite-black_star</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-blank_box"></div>
+          </td>
+          <td>sprite-blank_box</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-briefcase"></div>
+          </td>
+          <td>sprite-briefcase</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-bullet_go"></div>
+          </td>
+          <td>sprite-bullet_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-bullseye"></div>
+          </td>
+          <td>sprite-bullseye</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-calculator"></div>
+          </td>
+          <td>sprite-calculator</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-calendar_add"></div>
+          </td>
+          <td>sprite-calendar_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cart_delete"></div>
+          </td>
+          <td>sprite-cart_delete</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cart_edit"></div>
+          </td>
+          <td>sprite-cart_edit</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cart_go"></div>
+          </td>
+          <td>sprite-cart_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cart_put"></div>
+          </td>
+          <td>sprite-cart_put</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-chart_organisation"></div>
+          </td>
+          <td>sprite-chart_organisation</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-chart_organisation_small"></div>
+          </td>
+          <td>sprite-chart_organisation_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-check-gray"></div>
+          </td>
+          <td>sprite-check-gray</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-checkbox"></div>
+          </td>
+          <td>sprite-checkbox</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-checkbox-disabled"></div>
+          </td>
+          <td>sprite-checkbox-disabled</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-checkbox-selected"></div>
+          </td>
+          <td>sprite-checkbox-selected</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-circled-checkmark"></div>
+          </td>
+          <td>sprite-circled-checkmark</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-clipboard"></div>
+          </td>
+          <td>sprite-clipboard</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cog"></div>
+          </td>
+          <td>sprite-cog</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cog_go"></div>
+          </td>
+          <td>sprite-cog_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-coins"></div>
+          </td>
+          <td>sprite-coins</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-coins_cn"></div>
+          </td>
+          <td>sprite-coins_cn</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-collapsable"></div>
+          </td>
+          <td>sprite-collapsable</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-collapsed_section"></div>
+          </td>
+          <td>sprite-collapsed_section</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-comment"></div>
+          </td>
+          <td>sprite-comment</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-comment_add"></div>
+          </td>
+          <td>sprite-comment_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-comment_transparent"></div>
+          </td>
+          <td>sprite-comment_transparent</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-connect"></div>
+          </td>
+          <td>sprite-connect</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-connecting"></div>
+          </td>
+          <td>sprite-connecting</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract"></div>
+          </td>
+          <td>sprite-contract</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract-changed-flag"></div>
+          </td>
+          <td>sprite-contract-changed-flag</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_amendment_approved"></div>
+          </td>
+          <td>sprite-contract_amendment_approved</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_amendment_completed"></div>
+          </td>
+          <td>sprite-contract_amendment_completed</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_amendment_draft"></div>
+          </td>
+          <td>sprite-contract_amendment_draft</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_amendment_pending_approval"></div>
+          </td>
+          <td>sprite-contract_amendment_pending_approval</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_amendment_pending_signatures"></div>
+          </td>
+          <td>sprite-contract_amendment_pending_signatures</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_amendment_published"></div>
+          </td>
+          <td>sprite-contract_amendment_published</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_child_approved"></div>
+          </td>
+          <td>sprite-contract_child_approved</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_child_completed"></div>
+          </td>
+          <td>sprite-contract_child_completed</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_child_draft"></div>
+          </td>
+          <td>sprite-contract_child_draft</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_child_expired"></div>
+          </td>
+          <td>sprite-contract_child_expired</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_child_pending_approval"></div>
+          </td>
+          <td>sprite-contract_child_pending_approval</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_child_pending_signatures"></div>
+          </td>
+          <td>sprite-contract_child_pending_signatures</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_child_published"></div>
+          </td>
+          <td>sprite-contract_child_published</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_parent_approved"></div>
+          </td>
+          <td>sprite-contract_parent_approved</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_parent_completed"></div>
+          </td>
+          <td>sprite-contract_parent_completed</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_parent_draft"></div>
+          </td>
+          <td>sprite-contract_parent_draft</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_parent_expired"></div>
+          </td>
+          <td>sprite-contract_parent_expired</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_parent_pending_approval"></div>
+          </td>
+          <td>sprite-contract_parent_pending_approval</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_parent_pending_signatures"></div>
+          </td>
+          <td>sprite-contract_parent_pending_signatures</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-contract_parent_published"></div>
+          </td>
+          <td>sprite-contract_parent_published</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-coupa-advantage"></div>
+          </td>
+          <td>sprite-coupa-advantage</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-create_ro"></div>
+          </td>
+          <td>sprite-create_ro</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-creditcards"></div>
+          </td>
+          <td>sprite-creditcards</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cross"></div>
+          </td>
+          <td>sprite-cross</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cross_small"></div>
+          </td>
+          <td>sprite-cross_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-cycle_back"></div>
+          </td>
+          <td>sprite-cycle_back</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-delete"></div>
+          </td>
+          <td>sprite-delete</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-delete"></div>
+          </td>
+          <td>sprite-delete</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-delete_bw"></div>
+          </td>
+          <td>sprite-delete_bw</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-delete_large"></div>
+          </td>
+          <td>sprite-delete_large</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-delete_small"></div>
+          </td>
+          <td>sprite-delete_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-disabled"></div>
+          </td>
+          <td>sprite-disabled</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-disk"></div>
+          </td>
+          <td>sprite-disk</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-disk_small"></div>
+          </td>
+          <td>sprite-disk_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-door_in"></div>
+          </td>
+          <td>sprite-door_in</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-drag_handle"></div>
+          </td>
+          <td>sprite-drag_handle</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-email"></div>
+          </td>
+          <td>sprite-email</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-email_blocked"></div>
+          </td>
+          <td>sprite-email_blocked</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-email_edit"></div>
+          </td>
+          <td>sprite-email_edit</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-email_go"></div>
+          </td>
+          <td>sprite-email_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-email_go_bw"></div>
+          </td>
+          <td>sprite-email_go_bw</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-email_open"></div>
+          </td>
+          <td>sprite-email_open</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-enabled"></div>
+          </td>
+          <td>sprite-enabled</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-error"></div>
+          </td>
+          <td>sprite-error</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-escalated"></div>
+          </td>
+          <td>sprite-escalated</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-exclamation"></div>
+          </td>
+          <td>sprite-exclamation</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-existing-relationships"></div>
+          </td>
+          <td>sprite-existing-relationships</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-expanded_section"></div>
+          </td>
+          <td>sprite-expanded_section</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-external_update"></div>
+          </td>
+          <td>sprite-external_update</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-field-changed-flag"></div>
+          </td>
+          <td>sprite-field-changed-flag</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-folder_open"></div>
+          </td>
+          <td>sprite-folder_open</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-gauge"></div>
+          </td>
+          <td>sprite-gauge</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-grid"></div>
+          </td>
+          <td>sprite-grid</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-group"></div>
+          </td>
+          <td>sprite-group</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-health_rating0"></div>
+          </td>
+          <td>sprite-health_rating0</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-health_rating1"></div>
+          </td>
+          <td>sprite-health_rating1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-health_rating2"></div>
+          </td>
+          <td>sprite-health_rating2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-health_rating3"></div>
+          </td>
+          <td>sprite-health_rating3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-inbox-move"></div>
+          </td>
+          <td>sprite-inbox-move</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-info"></div>
+          </td>
+          <td>sprite-info</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-info_add"></div>
+          </td>
+          <td>sprite-info_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-internal_update"></div>
+          </td>
+          <td>sprite-internal_update</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-invisible"></div>
+          </td>
+          <td>sprite-invisible</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-invoicesmash"></div>
+          </td>
+          <td>sprite-invoicesmash</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-items_not_in_lots"></div>
+          </td>
+          <td>sprite-items_not_in_lots</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-key_go"></div>
+          </td>
+          <td>sprite-key_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-keyboard"></div>
+          </td>
+          <td>sprite-keyboard</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-layers"></div>
+          </td>
+          <td>sprite-layers</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lightning_go"></div>
+          </td>
+          <td>sprite-lightning_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lines"></div>
+          </td>
+          <td>sprite-lines</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-link"></div>
+          </td>
+          <td>sprite-link</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-list"></div>
+          </td>
+          <td>sprite-list</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lock"></div>
+          </td>
+          <td>sprite-lock</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lock_blue"></div>
+          </td>
+          <td>sprite-lock_blue</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lock_break"></div>
+          </td>
+          <td>sprite-lock_break</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lock_go"></div>
+          </td>
+          <td>sprite-lock_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lock_gray"></div>
+          </td>
+          <td>sprite-lock_gray</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lorry"></div>
+          </td>
+          <td>sprite-lorry</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-lorry_bw"></div>
+          </td>
+          <td>sprite-lorry_bw</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-magic"></div>
+          </td>
+          <td>sprite-magic</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-magic_add"></div>
+          </td>
+          <td>sprite-magic_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-magnifier"></div>
+          </td>
+          <td>sprite-magnifier</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-magnifier_small"></div>
+          </td>
+          <td>sprite-magnifier_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-magnifier_small_grey"></div>
+          </td>
+          <td>sprite-magnifier_small_grey</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-magnifier_small_grey"></div>
+          </td>
+          <td>sprite-magnifier_small_grey</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-master"></div>
+          </td>
+          <td>sprite-master</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-medal_gold_3"></div>
+          </td>
+          <td>sprite-medal_gold_3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-minus"></div>
+          </td>
+          <td>sprite-minus</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-money"></div>
+          </td>
+          <td>sprite-money</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-money_add"></div>
+          </td>
+          <td>sprite-money_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-msa"></div>
+          </td>
+          <td>sprite-msa</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-no"></div>
+          </td>
+          <td>sprite-no</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-no_self_approval_allowed"></div>
+          </td>
+          <td>sprite-no_self_approval_allowed</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-note"></div>
+          </td>
+          <td>sprite-note</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-operational-insights"></div>
+          </td>
+          <td>sprite-operational-insights</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-package"></div>
+          </td>
+          <td>sprite-package</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-package_add"></div>
+          </td>
+          <td>sprite-package_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-page_add"></div>
+          </td>
+          <td>sprite-page_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-page_blank"></div>
+          </td>
+          <td>sprite-page_blank</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-page_code"></div>
+          </td>
+          <td>sprite-page_code</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-page_copy"></div>
+          </td>
+          <td>sprite-page_copy</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-page_copy_bw"></div>
+          </td>
+          <td>sprite-page_copy_bw</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-page_excel"></div>
+          </td>
+          <td>sprite-page_excel</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-page_white_acrobat"></div>
+          </td>
+          <td>sprite-page_white_acrobat</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-page_word"></div>
+          </td>
+          <td>sprite-page_word</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-pencil"></div>
+          </td>
+          <td>sprite-pencil</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-pencil_bw"></div>
+          </td>
+          <td>sprite-pencil_bw</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-pencil_small"></div>
+          </td>
+          <td>sprite-pencil_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-pending_approval"></div>
+          </td>
+          <td>sprite-pending_approval</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-po-for-wc"></div>
+          </td>
+          <td>sprite-po-for-wc</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-po-invoice-stop"></div>
+          </td>
+          <td>sprite-po-invoice-stop</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-po-release-invoice-stop"></div>
+          </td>
+          <td>sprite-po-release-invoice-stop</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-po-reopen"></div>
+          </td>
+          <td>sprite-po-reopen</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-po-soft-close"></div>
+          </td>
+          <td>sprite-po-soft-close</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-pop-out"></div>
+          </td>
+          <td>sprite-pop-out</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-price_tier"></div>
+          </td>
+          <td>sprite-price_tier</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-printer"></div>
+          </td>
+          <td>sprite-printer</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-printer_small"></div>
+          </td>
+          <td>sprite-printer_small</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-quantity_deliverable"></div>
+          </td>
+          <td>sprite-quantity_deliverable</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-red-flag"></div>
+          </td>
+          <td>sprite-red-flag</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-request_review"></div>
+          </td>
+          <td>sprite-request_review</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-resource"></div>
+          </td>
+          <td>sprite-resource</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-restore"></div>
+          </td>
+          <td>sprite-restore</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-searchable-punchout"></div>
+          </td>
+          <td>sprite-searchable-punchout</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-ship-to"></div>
+          </td>
+          <td>sprite-ship-to</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-sourcing"></div>
+          </td>
+          <td>sprite-sourcing</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-stop"></div>
+          </td>
+          <td>sprite-stop</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-supplier-item-association"></div>
+          </td>
+          <td>sprite-supplier-item-association</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-supplier-items-explorer"></div>
+          </td>
+          <td>sprite-supplier-items-explorer</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-table"></div>
+          </td>
+          <td>sprite-table</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-table_go"></div>
+          </td>
+          <td>sprite-table_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-table_sort"></div>
+          </td>
+          <td>sprite-table_sort</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-tag_blue"></div>
+          </td>
+          <td>sprite-tag_blue</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-tag_blue_add"></div>
+          </td>
+          <td>sprite-tag_blue_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-tag_blue_add"></div>
+          </td>
+          <td>sprite-tag_blue_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-tag_red"></div>
+          </td>
+          <td>sprite-tag_red</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-thumb_up"></div>
+          </td>
+          <td>sprite-thumb_up</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-tick"></div>
+          </td>
+          <td>sprite-tick</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-tick-gray"></div>
+          </td>
+          <td>sprite-tick-gray</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-time"></div>
+          </td>
+          <td>sprite-time</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-transmit"></div>
+          </td>
+          <td>sprite-transmit</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-tripit"></div>
+          </td>
+          <td>sprite-tripit</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-twitter"></div>
+          </td>
+          <td>sprite-twitter</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-upgrade"></div>
+          </td>
+          <td>sprite-upgrade</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-user"></div>
+          </td>
+          <td>sprite-user</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-user_add"></div>
+          </td>
+          <td>sprite-user_add</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-user_comment"></div>
+          </td>
+          <td>sprite-user_comment</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-user_go"></div>
+          </td>
+          <td>sprite-user_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-user_green"></div>
+          </td>
+          <td>sprite-user_green</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-user_w"></div>
+          </td>
+          <td>sprite-user_w</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-vertical_split"></div>
+          </td>
+          <td>sprite-vertical_split</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-vertical_split_edit"></div>
+          </td>
+          <td>sprite-vertical_split_edit</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-visible"></div>
+          </td>
+          <td>sprite-visible</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-wand"></div>
+          </td>
+          <td>sprite-wand</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-white_star"></div>
+          </td>
+          <td>sprite-white_star</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-world_go"></div>
+          </td>
+          <td>sprite-world_go</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-wrench"></div>
+          </td>
+          <td>sprite-wrench</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-zoom"></div>
+          </td>
+          <td>sprite-zoom</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-zoom_in"></div>
+          </td>
+          <td>sprite-zoom_in</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon_button sprite-zoom_out"></div>
+          </td>
+          <td>sprite-zoom_out</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 </body>
 </html>

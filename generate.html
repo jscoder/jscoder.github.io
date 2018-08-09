@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Coupa Icons</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div><textarea id="css_input" class="css_input"></textarea></div>
+  <button id="button_generate">Generate</button>
+  <div class="header_icons">
+    <h2>Header Icons</h2>
+    <table class="header_icons_table">
+      <thead>
+        <tr>
+          <th>Icon</th>
+          <th>CSS Class Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <div class="action_icons">
+    <h2>Action Icons</h2>
+    <table class="action_icons_table">
+      <thead>
+        <tr>
+          <th>Icon</th>
+          <th>CSS Class Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script>
+    var button = document.getElementById('button_generate');
+    var textarea = document.getElementById('css_input');
+    button.addEventListener('click', onClickButton);
+
+    function onClickButton() {
+      var cssString = textarea.value;
+      appendStyle(cssString);
+      var headerCSSArray = getHeaderClasses(cssString);
+      var actionsCSSArray = getActionClasses(cssString);
+      createTable(headerCSSArray.sort(), 'header_icon', '.header_icons_table');
+      createTable(actionsCSSArray.sort(), 'icon_button', '.action_icons_table');
+    }
+
+    function getHeaderClasses(inputString) {
+      var regEx = /header-[_a-zA-Z0-9-]*/gm;
+      return inputString.match(regEx);
+    }
+
+    function getActionClasses(inputString) {
+      var regEx = /sprite-[_a-zA-Z0-9-]*/gm;
+      return inputString.match(regEx);
+    }
+
+    function createTable(array, iconBaseClass, tableSelector) {
+      var i=0, rowEl=null,
+          tableEl = document.querySelector(tableSelector);
+
+      console.log(tableSelector, tableEl);
+      for (i=0; i < array.length; i++) {
+        rowEl = tableEl.insertRow();  // DOM method for creating table rows
+        rowEl.insertCell().innerHTML = '<div class="' + iconBaseClass + " " + array[i] + '"></div>';
+        rowEl.insertCell().textContent = array[i];
+        rowEl.insertCell();
+        rowEl.insertCell();
+        rowEl.insertCell();
+      }
+      //document.body.appendChild( tableEl);
+    }
+
+    function appendStyle(content) {
+      var style = document.createElement('style');
+      style.type = 'text/css';
+      style.innerHTML = content;
+      document.getElementsByTagName('head')[0].appendChild(style);
+    }
+  </script>
+</body>
+</html>
