@@ -1,52 +1,950 @@
-    body {
-      background-color: #FFF;
-      font-family: helvetica, arial, sans-serif;
-      font-size: 13px;
-      color: #333;
-    }
-    textarea.css_input {
-      width: 600px;
-      height: 200px;
-    }
-    .header_icon {
-      background: url(sprite_headers.svg) no-repeat top left;
-      width: 26px;
-      height: 24px;
-      margin: 0px 8px 3px 0;
-      background-size: 62px 2532.9px;
-    }
-    .icon_button {
-      background: url(sprite_iconbuttons_18x18.svg) no-repeat top left;
-      padding: 0;
-      margin: 3px;
-      width: 18px;
-      height: 18px;
-      vertical-align: top;
-    }
-    table {
-      border-collapse: collapse;
-      table-layout: fixed;
-      text-align: left;
-      width: 100%;
-    }
-    table th {
-      background-color: #f0f0f0;
-      border: 1px solid #ddd;
-      border-top: none;
-      padding: 10px;
-    }
-    table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-    }
-    .header_icons, .action_icons {
-      margin: 20px 10px;
-      padding: 1px 0;
-    }
-    h2 {
-      background-color: #ffe7e7;
-      border: 1px solid #ddd;
-      margin: 0;
-      padding: 16px 10px;
-      font-weight: normal;
-    }
+body {
+  background-color: #FFF;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+textarea.css_input {
+  width: 600px;
+  height: 200px;
+}
+.header_icon {
+  background: url(sprite_headers.svg) no-repeat top left;
+  width: 26px;
+  height: 24px;
+  margin: 0px 8px 3px 0;
+  background-size: 62px 2532.9px;
+}
+.icon_button {
+  background: url(sprite_iconbuttons_18x18.svg) no-repeat top left;
+  padding: 0;
+  margin: 3px;
+  width: 18px;
+  height: 18px;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: left;
+  width: 100%;
+}
+table th {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+}
+table th:first-child {
+  width: 50px;
+}
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.header_icons, .action_icons {
+  margin: 20px 10px;
+  padding: 1px 0;
+}
+h2 {
+  background-color: #ffe7e7;
+  border: 1px solid #ddd;
+  margin: 0;
+  padding: 16px 10px;
+  font-weight: normal;
+}
+
+
+/* below are icon sprite styles copied from various Coupa CSS files  */
+
+/*   asset sprites!    */
+.assets-bullet_arrow_down{ background-position: -158px -2px; width: 9px; height: 16px; }
+.assets-bullet_arrow_up{ background-position: -184px -2px; width: 9px; height: 16px; }
+
+.assets-close_tour{ background-position: -251px 0; width: 17px; height: 34px; }
+.assets-tour_sign{ background-position: -126px -68px; width: 25px; height: 28px; }
+.assets-x_table{ background-position: -172px -78px; width: 7px; height: 7px; }
+
+
+/*   header icon sprites!    */
+.header-additional-settings{ background-position: -15px -1012px; }
+.header-address,
+.header-shipping{ background-position: -19px -367px; width: 17px; }
+.header-alerts{ background-position: -15px -1654px; }
+.header-approval{ background-position: -15px -207px; }
+.header-business-partner,
+.header-content-groups{ background-position: -15px -782px; }
+.header-attachments{ background-position: -14px -1745px; }
+.header-budgets{ background-position: -15px -551px; }
+.header-buyOnline{ background-position: -15px -160px; }
+.header-cart{ background-position: -15px -300px; }
+.header-chat{ background-position: -15px -1931px; width: 25px; }
+.header-clipboard{ background-position: -18px -115px; width: 21px; }
+.header-comments{ background-position: -15px -1931px; width: 25px; }
+.header-compare{ background-position: -15px -1563px; }
+.header-competitive-chart{ background-position: -15px -1056px; }
+.header-contracts{ background-position: -15px -1240px; }
+.header-credit_card{ background-position: -14px -415px; width: 24px; }
+.header-cxml{ background-position: -15px -873px; width: 19px; }
+.header-documents{ background-position: -18px -597px; width: 19px; }
+.header-event-details,
+.header-contract-details,
+.header-supplier-details{ background-position: -14px -550px; }
+.header-event-items-and-lots,
+.header-items{ background-position: -14px -1702px; }
+.header-event-questionnaires{ background-position: -14px -1793px; width: 21px; height: 25px; }
+.header-event-timeline{ background-position: -14px -965px; }
+.header-event-type{ background-position: -14px -643px; }
+.header-financials{ background-position: -14px -550px; }
+.header-history{ background-position: -14px -1840px; }
+.header-info{ background-position: -15px -1608px; }
+.header-invoice-inbox{ background-position: -15px -1102px; }
+.header-invoicing{ background-position: -15px -1335px; }
+.header-groups-and-tasks{ background-position: -14px -1702px; }
+.header-lines{ background-position: -15px -325px; }
+.header-message{ background-position: -14px -22px; }
+.header-payments{ background-position:  -14px -415px; width: 24px; }
+.header-po-transmission{ background-position: -14px -643px; }
+.header-pricing-and-terms{ background-position: -14px -504px; }
+.header-recentOrders{ background-position: -15px -69px; }
+.header-reportHeader{ background-position: -15px -252px; }
+.header-reportsHeader{ background-position: -15px -252px; }
+.header-requisitions{ background-position: -15px -68px; }
+.header-responses{ background-position: -15px -1150px; }
+.header-score-weights{ background-position: -14px -736px; }
+.evaluation-weights{ background-position: -14px -1745px; }
+.header-supplier{ background-position: -15px -828px; width: 16px; }
+.header-terms-and-conditions{ background-position: -14px -504px; }
+.header-toDos{ background-position: -15px -115px; }
+.header-with-status{ background-position: -15px -458px; }
+.header-suitcase_white{ background-position: -19px -367px; width: 17px; }
+.header-performance-management{ background-position: -14px -2036px; }
+.num_comments{ background-position: -14px -1930px; width: 30px; }
+.header-benchmark-savings{ background-position: -14px -2130px; }
+.header-benchmark-efficiency{ background-position: -14px -2176px; }
+.header-benchmark-usage{ background-position: -14px -2220px; }
+.header-pending-recommendations{ background-position: -14px -2268px; }
+.header-completed-recommendations{ background-position: -14px -2320px; }
+.header-services{
+  background-position: -17px -2400px;
+}
+.header-timesheet{
+  background-position: -18px -2447px;
+}
+.header-supplier-rating{
+  background-position: -17px -2358px;
+}
+
+
+
+/*  action icon sprites!    */
+.sprite-accept{
+  background-position: -756px -180px;
+}
+.sprite-accept_small{
+  background-position: -433px -307px;
+  width: 16px;
+  height: 16px;
+}
+.sprite-add{
+  background-position: -108px -54px;
+}
+.sprite-add_small {
+  background-position: -73px -307px;
+  width:16px;
+  height:16px;
+}
+.sprite-add_bw{
+  background-position: -288px -360px;
+}
+.sprite-anchor{
+  background-position: -36px -216px;
+}
+.sprite-application-form{
+  background-position: -72px -216px;
+}
+.sprite-application_form{
+  background-position: -144px -216px;
+}
+.sprite-application_form_delete{
+  background-position: -108px -216px;
+}
+.sprite-applications-blue{
+  background-position: -180px -216px;
+}
+.sprite-arrow_down_gray{
+  background-position: -252px -180px;
+}
+.sprite-arrow_left{
+  background-position: 0 -252px;
+}
+.sprite-arrow_left_gray{
+  background-position: -216px -180px;
+}
+.sprite-arrow_refresh{
+  background-position: -216px -216px;
+}
+.sprite-arrow_right{
+  background-position: -252px -216px;
+}
+.sprite-arrow_right_gray{
+  background-position: -180px -180px;
+}
+.sprite-arrow_rotate_right {
+  background-position: -540px -216px;
+}
+.sprite-expanded_section {
+  background-position: -1296px -252px;
+}
+.sprite-collapsed_section {
+  background-position: -1332px -252px;
+}
+
+.sprite-restore {
+  background-position: -792px -144px;
+}
+.sprite-arrow_split{
+  background-position: 0 -108px;
+}
+.sprite-account_split{
+  background-position: -360px -216px;
+}
+.sprite-account_split_add{
+  background-position: -324px -216px;
+}
+.sprite-account_split_edit{
+  background-position: -576px -252px;
+}
+.sprite-arrow_undo {
+  background-position: -216px -18px;
+}
+.sprite-arrow_undo_bw{
+  background-position: -180px -360px;
+}
+.sprite-arrow_up_gray{
+  background-position: -288px -180px;
+}
+.sprite-gauge{
+  background-position: -540px -360px;
+}
+.sprite-asterisk_orange{
+  background-position: -36px -108px;
+}
+.sprite-attach{
+  background-position: -72px -108px;
+}
+.sprite-basket{
+  background-position: -108px -108px;
+}
+
+.sprite-supplier-item-association {
+  background-position: -650px -215px;
+}
+.sprite-bell{
+  background-position: -144px -108px;
+}
+.sprite-bell_add{
+  background-position: -180px -108px;
+}
+
+.sprite-bell_remove {
+  background-position: -1548px -216px;
+  width: 18px;
+  height: 19px;
+}
+.sprite-blank_box{
+  background-position: -288px -252px;
+}
+.sprite-bullet_go{
+  background-position: -252px -108px;
+}
+.sprite-bullseye{
+  background-position: -288px -108px;
+}
+.sprite-calculator{
+  background-position: -324px -108px;
+}
+.sprite-calendar_add{
+  background-position: -360px -108px;
+}
+.sprite-cart_delete{
+  background-position: -504px -216px;
+}
+.sprite-cart_edit{
+  background-position: -72px -54px;
+}
+.sprite-cart_go{
+  background-position: -36px -54px;
+}
+.sprite-chart_organisation{
+  background-position: -432px -108px;
+}
+.sprite-chart_organisation_small{
+  background-position: -288px -306px;
+}
+.sprite-cog{
+  background-position: -720px -180px;
+}
+.sprite-cog_go{
+  background-position: -468px -252px;
+}
+.sprite-coins{
+  background-position: -36px -18px;
+}
+.sprite-coins_cn{
+  background-position: -72px -18px;
+}
+.sprite-comment{
+  background-position: -432px -180px;
+}
+.sprite-comment_add{
+  background-position: -468px -108px;
+}
+.sprite-comment_transparent{
+  background-position: -756px -252px;
+}
+.sprite-connect{
+  background-position: -504px -108px;
+}
+.sprite-connecting{
+  background-position: -540px -108px;
+}
+.sprite-creditcards{
+  background-position: -576px -108px;
+}
+.sprite-cross{
+  background-position: -324px -18px;
+}
+.button img.sprite-delete,
+.sprite-delete_small,.sprite-cross_small {
+  background-position: -109px -307px;
+}
+.sprite-delete,
+.sprite-delete_large {
+  background-position: -324px -18px;
+  width: 20px;
+  height: 19px;
+}
+.sprite-delete_bw{
+  background-position: -144px -360px;
+}
+.sprite-disk {
+  background-position: -144px -252px;
+}
+.sprite-disk_small {
+  background-position: -253px -307px;
+  width: 16px;
+  height: 16px;
+}
+.sprite-door_in{
+  background-position: -288px -18px;
+}
+.sprite-email{
+  background-position: -288px -54px;
+}
+.sprite-email_edit{
+  background-position: -360px -54px;
+}
+.sprite-email_go{
+  background-position: -108px -18px;
+}
+.sprite-email_go_bw{
+  background-position: -324px -360px;
+}
+.sprite-email_blocked{
+  background-position: -540px -54px;
+}
+.sprite-error{
+  background-position: -612px -108px;
+}
+.sprite-exclamation{
+  background-position: -648px -108px;
+}
+.sprite-grid{
+  background-position: -540px -180px;
+}
+.sprite-group{
+  background-position: -504px -19px;
+}
+.sprite-keyboard{
+  background-position: -396px -180px;
+}
+.sprite-key_go{
+  background-position: -396px -54px;
+}
+.sprite-layers{
+  background-position: -180px -144px;
+}
+.sprite-lightning_go{
+  background-position: -288px -54px;
+}
+.sprite-lines{
+  background-position: -216px -144px;
+}
+.sprite-link{
+  background-position: -252px -144px;
+}
+/* icon color is too light */
+.sprite-list{
+  background-position: -576px -180px;
+}
+.sprite-lock, .sprite-no_self_approval_allowed{
+  background-position: -468px -180px;
+}
+.sprite-lock_go{
+  background-position: -288px -144px;
+}
+.sprite-lorry{
+  background-position: -144px -18px;
+}
+.sprite-lorry_bw{
+  background-position: -72px -360px;
+}
+.sprite-magnifier{
+  background-position: -324px -144px;
+}
+.sprite-magnifier_small, .sprite-magnifier_small_grey{
+  background-position: -397px -307px;
+  width: 16px;
+  height: 16px;
+}
+.sprite-magnifier_small_grey{
+  background-position: -361px -361px;
+}
+.sprite-medal_gold_3{
+  background-position: -216px -54px;
+}
+.sprite-minus{
+  background-position: -72px -180px;
+}
+.sprite-money{
+  background-position: -360px -144px;
+}
+.sprite-money_add{
+  background-position: -396px -144px;
+}
+.sprite-note{
+  background-position: -432px -144px;
+}
+.sprite-package{
+  background-position: -180px -54px;
+}
+.sprite-package_add{
+  background-position: -144px -54px;
+}
+.sprite-page_add{
+  background-position: -252px -54px;
+}
+.sprite-page_code{
+  background-position: -468px -144px;
+}
+.sprite-page_copy{
+  background-position: -360px -18px;
+}
+.sprite-page_copy_bw{
+  background-position: -0 -360px;
+}
+.sprite-page_excel{
+  background-position: -504px -144px;
+}
+.sprite-page_white_acrobat{
+  background-position: -540px -144px;
+}
+.sprite-page_word{
+  background-position: -576px -144px;
+}
+.sprite-pencil{
+  background-position: -180px -18px;
+}
+.sprite-pencil_bw{
+  background-position: -252px -360px;
+}
+.sprite-pencil_small{
+  background-position: -199px -307px;
+  width: 16px;
+  height: 16px;
+}
+.sprite-price_tier{
+  background-position: -108px -180px;
+}
+.sprite-printer{
+  background-position: 0 -18px;
+}
+.sprite-printer_small {
+  background-position: -325px -307px;
+  width: 16px;
+  height: 16px;
+}
+/* icon used for "release booking hold". May have different meaning in other locations */
+.sprite-stop{
+  background-position: -612px -144px;
+}
+.sprite-table_go{
+  background-position: -648px -144px;
+}
+.sprite-table_sort{
+  background-position: -684px -144px;
+}
+.sprite-tag_blue{
+  background-position: -684px -108px;
+}
+.sprite-tag_blue_add{
+  background-position: -720px -108px;
+}
+.sprite-tag_blue_add{
+  background-position: -720px -108px;
+}
+.sprite-tag_red{
+  background-position: -756px -108px;
+}
+.sprite-thumb_up{
+  background-position: 0 -144px;
+}
+.sprite-tick, .sprite-approved{
+  background-position: -36px -144px;
+}
+.sprite-time{
+  background-position: -72px -144px;
+}
+.sprite-transmit{
+  background-position: -108px -144px;
+}
+.sprite-tripit{
+  background-position: -144px -180px;
+}
+.sprite-twitter{
+  background-position: -144px -144px;
+}
+.sprite-upgrade{
+  background-position: -576px -54px;
+}
+.sprite-user, .sprite-user_w{
+  background-position: -432px -18px;
+}
+.sprite-user_add{
+  background-position: -468px -18px;
+}
+.sprite-user_comment{
+  background-position: -396px -180px;
+}
+.sprite-user_go{
+  background-position: -396px -18px;
+}
+.sprite-user_green{
+  background-position: -540px -18px;
+}
+.sprite-wand{
+  background-position: -468px -216px;
+}
+.sprite-world_go{
+  background-position: -252px -18px;
+}
+.sprite-wrench{
+  background-position: -72px -54px;
+}
+.sprite-zoom{
+  background-position: -324px -144px;
+}
+.sprite-zoom_in {
+  background-position: -324px -180px;
+}
+.sprite-zoom_out {
+  background-position: -360px -180px;
+}
+.sprite-escalated{
+  background-position: 0 -180px;
+}
+.sprite-folder_open{
+  background-position: -36px -180px;
+}
+.sprite-clipboard {
+  background-position: 0 -54px;
+}
+.sprite-sourcing {
+  background-position: -612px -180px;
+}
+.sprite-white_star {
+  background-position: -108px -360px;
+}
+.sprite-black_star {
+  background-position: -648px -180px;
+}
+.sprite-lock_blue, .sprite-lock_gray {
+  background-position: -36px -360px;
+}
+.sprite-visible{
+  background-position: -432px -54px;
+}
+.sprite-invisible{
+  background-position: -216px -360px;
+}
+.sprite-pending_approval {
+  background-position: -360px -252px;
+}
+.sprite-info {
+  background-position: -612px -252px;
+}
+.sprite-collapsable {
+  background-position: -396px -430px;
+}
+.sprite-msa {
+  background-position: -1152px -252px;
+}
+.sprite-master {
+  background-position: -1188px -249px;
+}
+.sprite-amendment {
+  background-position: -1224px -252px;
+}
+.sprite-contract {
+  background-position: -1260px -252px;
+}
+.sprite-contract_parent_approved {
+  background-position: -1224px -144px;
+}
+.sprite-contract_child_approved {
+  background-position: -1260px -144px;
+}
+.sprite-contract_amendment_approved {
+  background-position: -1296px -144px;
+}
+.sprite-contract_parent_pending_approval {
+  background-position: -1330px -144px;
+}
+.sprite-contract_child_pending_approval {
+  background-position: -1368px -144px;
+}
+.sprite-contract_amendment_pending_approval {
+  background-position: -1404px -144px;
+}
+.sprite-contract_amendment_pending_signatures, .sprite-contract_parent_pending_signatures, .sprite-contract_child_pending_signatures {
+  background-position: -1440px -144px;
+}
+.sprite-contract_parent_draft {
+  background-position: -1368px -216px;
+}
+.sprite-contract_child_draft {
+  background-position: -1404px -216px;
+}
+.sprite-contract_amendment_draft {
+  background-position: -1440px -216px;
+}
+.sprite-contract_parent_published {
+  background-position: -1188px -252px;
+}
+.sprite-contract_child_published {
+  background-position: -1224px -252px;
+}
+.sprite-contract_amendment_published {
+  background-position: -1260px -252px;
+}
+.sprite-contract_parent_completed {
+  background-position: -1330px -180px;
+}
+.sprite-contract_child_completed {
+  background-position: -1368px -180px;
+}
+.sprite-contract_amendment_completed {
+  background-position: -1404px -180px;
+}
+.sprite-contract_parent_expired {
+  background-position: -1260px -180px;
+}
+.sprite-contract_child_expired {
+  background-position: -1296px -180px;
+}
+.sprite-info_add {
+  background-position: -504px -252px;
+}
+.sprite-invoicesmash {
+  background-position: -612px -54px;
+}
+.sprite-inbox-move {
+  background-position: -1152px -180px;
+}
+.sprite-magic {
+  background-position: -468px -216px;
+}
+.sprite-magic_add {
+  background-position: -432px -216px;
+}
+.sprite-vertical_split{
+  background-position: -360px -216px;
+}
+.sprite-vertical_split_edit{
+  background-position: -576px -252px;
+}
+.sprite-application_view_detail, .sprite-table {
+  background-position: -144px -216px;
+}
+.sprite-quantity_deliverable{
+  background-position: -864px -216px;
+}
+.sprite-amount_deliverable{
+  background-position: -936px -216px;
+}
+.sprite-resource{
+  background-position: -900px -216px;
+}
+.sprite-items_not_in_lots{
+  background-position: -684px -180px;
+}
+.sprite-page_blank {
+  background-position: -648px -252px;
+}
+.sprite-enabled {
+  background-position: -576px -18px;
+}
+.sprite-disabled {
+  background-position: -612px -18px;
+}
+.sprite-po-for-wc {
+  background-position: -648px -18px;
+}
+.sprite-po-soft-close {
+  background-position: -684px -18px;
+}
+.sprite-po-reopen {
+  background-position: -720px -18px;
+}
+.sprite-po-invoice-stop {
+  background-position: -756px -18px;
+}
+.sprite-po-release-invoice-stop {
+  background-position: -792px -18px;
+}
+.sprite-arrow_void {
+  background-position: -324px -54px;
+}
+.sprite-cycle_back {
+  background-position: -504px -54px;
+}
+.sprite-tick-gray {
+  background-position: -468px -360px;
+}
+
+.sprite-external_update {
+  background-position: -108px -18px;
+}
+.sprite-internal_update {
+  background-position: -216px -216px;
+}
+.sprite-request_review {
+  background-position: -1224px -180px;
+}
+
+.sprite-check-gray {
+  background-position: -504px -363px;
+}
+
+.sprite-health_rating3 {
+  background-position: -936px -252px;
+}
+
+.sprite-health_rating2 {
+  background-position: -972px -252px;
+}
+
+.sprite-health_rating1 {
+  background-position: -1008px -252px;
+}
+
+.sprite-no {
+  background-position: -1080px -252px;
+}
+
+.sprite-health_rating0 {
+  background-position: -1116px -252px;
+}
+
+.sprite-coupa-advantage {
+  background-position: -1260px -108px;
+}
+
+.sprite-existing-relationships {
+  background-position: -1297px -108px;
+}
+
+.sprite-ship-to {
+  background-position: -1332px -108px;
+}
+
+.sprite-supplier-items-explorer {
+  background-position: -1367px -108px;
+}
+
+.sprite-operational-insights {
+  background-position: -1476px -216px;
+}
+
+.sprite-contract-changed-flag, .sprite-field-changed-flag {
+  background-position: -398px -214px;
+}
+
+.sprite-red-flag {
+  background-position: -1404px -108px
+}
+
+.sprite-pop-out {
+  background-position: -1440px -108px;
+}
+
+.sprite-create_ro {
+  background-position: -1440px -251px;
+}
+
+.sprite-checkbox-disabled {
+  background-position: -1512px -184px;
+}
+
+.sprite-checkbox-selected {
+  background-position: -1512px -148px;
+}
+
+.sprite-checkbox {
+  background-position: -1512px -110px;
+}
+
+.sprite-circled-checkmark {
+  background-position: -1548px -180px;
+}
+
+.sprite-searchable-punchout {
+  background-position: -1512px -216px;
+}
+
+.sprite-drag_handle {
+  background-position: -37px -307px;
+}
+
+/* icon not used anywhere */
+.sprite-briefcase{ background: image-url("sprite_iconbuttons.png") no-repeat -399px 0; width: 16px; height: 16px; }
+/* icon missing in new sprite */
+.sprite-cart_put{ background: image-url("sprite_iconbuttons.png") no-repeat -567px 0; width: 16px; height: 16px; }
+.sprite-email_open{ background: image-url("sprite_iconbuttons.png") no-repeat -924px 0; width: 16px; height: 16px; }
+.sprite-lock_break{ background: image-url("sprite_iconbuttons.png") no-repeat -2213px 0; width: 16px; height: 16px; }
+
+/* Perfect Fit Insights - Industry sprites */
+.industry-icon {
+   background: image-url("sprite_analytics_display.svg") no-repeat top left;
+   padding:0;
+}
+
+.all-industries{ background-position: -1px -1px; width: 60px; height: 60px; }
+.business-services{ background-position: -121px -1px; width: 60px; height: 60px; }
+.com-media{ background-position: -361px -1px; width: 60px; height: 60px; }
+.education{ background-position: -121px -1px; width: 60px; height: 60px; }
+.finance-services{ background-position: -481px -1px; width: 60px; height: 60px; }
+.food-bev{ background-position: -601px -1px; width: 60px; height: 60px; }
+.health-life-sci{ background-position: -721px -1px; width: 60px; height: 60px; }
+.high-tech{ background-position: -841px -1px; width: 60px; height: 60px; }
+.travel-hospitality{ background-position: -961px -1px; width: 60px; height: 60px; }
+.retail{ background-position: -1px -121px; width: 60px; height: 60px; }
+.public-sector{ background-position: -121px -121px; width: 60px; height: 60px; }
+.oil-gas{ background-position: -241px -121px; width: 60px; height: 60px; }
+.mfg-mining{ background-position: -361px -121px; width: 60px; height: 60px; }
+.mfg{ background-position: -361px -121px; width: 60px; height: 60px; }
+.education-public-sector{ background-position: -121px -1px; width: 60px; height: 60px; }
+.ci-topX { background-position: -961px -121px; width: 60px; height: 60px; }
+.ci-single { background-position: -841px -121px; width: 60px; height: 60px; }
+
+.opportunity-trigger-sprite {
+  background: image-url("trigger_icons.svg") no-repeat 0px 0px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+
+  &.opportunity_trigger_contract_expiration { background-position: 0px -671px; }
+  &.opportunity_trigger_increased_spend { background-position: 0px -503px; }
+  &.opportunity_trigger_frequent_free_form { background-position: 0px -615px; }
+  &.opportunity_trigger_invoice_increase { background-position: 0px -503px; }
+  &.opportunity_trigger_large_requisition { background-position: 0px -783px; }
+  &.opportunity_trigger_increased_expenses_by_merchant { background-position: 0px -503px; }
+  &.opportunity_trigger_increased_expenses_by_category { background-position: 0px -503px; }
+
+  &.inventory_opportunity_trigger_frequent_orders { background-position: 0px -783px; }
+  &.inventory_opportunity_trigger_frequent_adjustments { background-position: 0px -559px; }
+
+  &.opportunity_trigger_inactive_supplier { background-position: 0px -335px; }
+  &.opportunity_trigger_expiring_forms { background-position: 0px -391px; }
+  &.opportunity_trigger_outdated_sim { background-position: 0px -447px; }
+  &.opportunity_trigger_supplier_link_suggestion { background-position: 0px -2072px; }
+
+  &.opportunity_trigger_supplier_risk { background-position: 0px 0px;}
+  &.opportunity_trigger_supplier_performance { background-position: 0px 0px;}
+}
+
+//compliance logos
+.invoice-compliance-sprite {
+  background: image-url("trigger_icons.svg") no-repeat 0px 0px;
+  width: 50px;
+  height: 43px;
+  display: inline-block;
+
+  &.compliant2_2Icon42 { background-position: 0px -2015px }
+  &.compliant2_2Icon130 { background-position: -4px -1847px }
+  &.compliant2_3Icon42 { background-position: 0px -1763px }
+  &.compliant2_3Icon130 { background-position: -4px -1343px }
+  &.compliant3_3Icon42 { background-position: 0px -1679px }
+  &.compliant3_3Icon130 { background-position: -4px -1175px }
+  &.compliant3_4Icon42 { background-position: 0px -1595px }
+  &.compliant3_4Icon130 { background-position: -4px -1007px }
+  &.compliant4_4Icon42 { background-position: 0px -1511px }
+  &.compliant4_4Icon130 { background-position: -4px -839px }
+  &.compliant1Icon42, &.compliant1Icon130 { background-position: 0px 50px }
+}
+
+.fraud_risk_sprite {
+  background: image-url("trigger_icons.svg") no-repeat 0px 0px;
+  width: 60px;
+  height: 60px;
+  &.global {
+    background-position: -5px -3980px;
+    width: 71px;
+  }
+  &.users { background-position: -7px -2492px; }
+  &.lines { background-position: -3px -2409px; }
+}
+.search-icon-sprite {
+  background: image-url('trigger_icons.svg') no-repeat 0px 0px;
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+
+  &.magnifier_icon_large {
+    background-position: 0px -2856px;
+  }
+}
+.employee_spend_view_sprite,
+.spend_guard_global_sprite {
+  background: image-url('trigger_icons.svg') no-repeat 0px 0px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  &.expense_lines { background-position: 13px -3037px; }
+  &.expenses, &.expense_reports { background-position: 7px -3094px; }
+  &.requisitions { background-position: 3px -3260px }
+  &.purchase_orders { background-position: 3px -3202px; }
+  &.invoices { background-position: 3px -3142px; }
+  &.contracts { background-position: 3px -3326px; }
+  &.sourcing_events { background-position: 5px -3390px; }
+}
+
+.employee_spend_view_avatar_sprite {
+  background: image-url('trigger_icons.svg') no-repeat 0px 0px;
+  width: 80px;
+  height: 80px;
+  &.avatar { background-position: 2px -3880px; }
+}
+
+.spend_profile_sprite {
+  background: image-url('trigger_icons.svg') no-repeat 0px 0px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: inline-block;
+  &.expenses { background-position: -60px -111px; }
+  &.requisitions { background-position: -60px -223px; }
+  &.purchase_orders { background-position: -60px -167px; }
+  &.invoices { background-position: -60px -279px; }
+}
