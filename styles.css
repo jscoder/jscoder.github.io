@@ -35,6 +35,9 @@
       border-top: none;
       padding: 10px;
     }
+    table th:first-child {
+      width: 50px;
+    }
     table td {
       border: 1px solid #ddd;
       padding: 10px;
