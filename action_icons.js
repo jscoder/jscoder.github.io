@@ -33,7 +33,7 @@ var actionIcons = [
     "class_name":"sprite-add",
     "description":"",
     "usage":"",
-    "notes":"Add New"
+    "notes":"This also means ADD NEW"
   },
   {  
     "class_name":"sprite-add_bw",
