@@ -134,13 +134,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-arrow_right_gray",
     "description":"",
-    "usage":"",
+    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboards",
     "notes":""
   },
   {  
     "class_name":"sprite-arrow_rotate_right",
     "description":"",
-    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboards",
+    "usage":"",
     "notes":""
   },
   {  
@@ -182,7 +182,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-attach",
     "description":"",
-    "usage":"",
+    "usage":"Attachment",
     "notes":""
   },
   {  
@@ -194,19 +194,19 @@ var actionIcons = [
   {  
     "class_name":"sprite-bell",
     "description":"",
-    "usage":"",
+    "usage":"Alert",
     "notes":""
   },
   {  
     "class_name":"sprite-bell_add",
     "description":"",
-    "usage":"",
+    "usage":"Alert",
     "notes":""
   },
   {  
     "class_name":"sprite-bell_remove",
     "description":"",
-    "usage":"",
+    "usage":"Alert",
     "notes":""
   },
   {  
@@ -260,13 +260,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-cart_edit",
     "description":"",
-    "usage":"",
+    "usage":"Adjust Inventory Balance",
     "notes":""
   },
   {  
     "class_name":"sprite-cart_go",
     "description":"",
-    "usage":"",
+    "usage":"Transfer Inventory Balance",
     "notes":""
   },
   {  
@@ -290,7 +290,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-check-gray",
     "description":"",
-    "usage":"",
+    "usage":"Accept Disabled",
     "notes":""
   },
   {  
@@ -326,55 +326,55 @@ var actionIcons = [
   {  
     "class_name":"sprite-cog",
     "description":"",
-    "usage":"",
+    "usage":"Settings",
     "notes":""
   },
   {  
     "class_name":"sprite-cog_go",
     "description":"",
-    "usage":"",
+    "usage":"Settings",
     "notes":""
   },
   {  
     "class_name":"sprite-coins",
     "description":"",
-    "usage":"",
+    "usage":"Invoice",
     "notes":""
   },
   {  
     "class_name":"sprite-coins_cn",
     "description":"",
-    "usage":"",
+    "usage":"Credit Note",
     "notes":""
   },
   {  
     "class_name":"sprite-collapsable",
     "description":"",
-    "usage":"",
+    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboard",
     "notes":""
   },
   {  
     "class_name":"sprite-collapsed_section",
     "description":"",
-    "usage":"",
+    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboard",
     "notes":""
   },
   {  
     "class_name":"sprite-comment",
     "description":"",
-    "usage":"",
+    "usage":"Comment",
     "notes":""
   },
   {  
     "class_name":"sprite-comment_add",
     "description":"",
-    "usage":"",
+    "usage":"Comment",
     "notes":""
   },
   {  
     "class_name":"sprite-comment_transparent",
     "description":"",
-    "usage":"",
+    "usage":"Comment",
     "notes":""
   },
   {  
@@ -392,139 +392,139 @@ var actionIcons = [
   {  
     "class_name":"sprite-contract",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract-changed-flag",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_amendment_approved",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_amendment_completed",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_amendment_draft",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_amendment_pending_approval",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_amendment_pending_signatures",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_amendment_published",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_child_approved",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_child_completed",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_child_draft",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_child_expired",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_child_pending_approval",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_child_pending_signatures",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_child_published",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_parent_approved",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_parent_completed",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_parent_draft",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_parent_expired",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_parent_pending_approval",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_parent_pending_signatures",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-contract_parent_published",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-coupa-advantage",
     "description":"",
-    "usage":"",
+    "usage":"Coupa Advantage logo or type",
     "notes":""
   },
   {  
@@ -542,13 +542,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-cross",
     "description":"",
-    "usage":"",
+    "usage":"Delete",
     "notes":""
   },
   {  
     "class_name":"sprite-cross_small",
     "description":"",
-    "usage":"",
+    "usage":"Delete",
     "notes":""
   },
   {  
@@ -560,37 +560,37 @@ var actionIcons = [
   {  
     "class_name":"sprite-delete",
     "description":"",
-    "usage":"",
+    "usage":"Delete",
     "notes":""
   },
   {  
     "class_name":"sprite-delete",
     "description":"",
-    "usage":"",
+    "usage":"Delete",
     "notes":""
   },
   {  
     "class_name":"sprite-delete_bw",
     "description":"",
-    "usage":"",
+    "usage":"Delete Disabled",
     "notes":""
   },
   {  
     "class_name":"sprite-delete_large",
     "description":"",
-    "usage":"",
+    "usage":"Delete",
     "notes":""
   },
   {  
     "class_name":"sprite-delete_small",
     "description":"",
-    "usage":"",
+    "usage":"Delete",
     "notes":""
   },
   {  
     "class_name":"sprite-disabled",
     "description":"",
-    "usage":"",
+    "usage":"Disabled, hidden, not visible, inactive, non-active",
     "notes":""
   },
   {  
@@ -638,13 +638,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-email_go",
     "description":"",
-    "usage":"",
+    "usage":"Send, submit",
     "notes":""
   },
   {  
     "class_name":"sprite-email_go_bw",
     "description":"",
-    "usage":"",
+    "usage":"Send, submit",
     "notes":""
   },
   {  
@@ -656,25 +656,25 @@ var actionIcons = [
   {  
     "class_name":"sprite-enabled",
     "description":"",
-    "usage":"",
+    "usage":"Enabled, viewable, visible, active",
     "notes":""
   },
   {  
     "class_name":"sprite-error",
     "description":"",
-    "usage":"",
+    "usage":"Error, alert",
     "notes":""
   },
   {  
     "class_name":"sprite-escalated",
     "description":"",
-    "usage":"",
+    "usage":"Escalated, approvals",
     "notes":""
   },
   {  
     "class_name":"sprite-exclamation",
     "description":"",
-    "usage":"",
+    "usage":"Error, alert",
     "notes":""
   },
   {  
@@ -686,19 +686,19 @@ var actionIcons = [
   {  
     "class_name":"sprite-expanded_section",
     "description":"",
-    "usage":"",
+    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboards",
     "notes":""
   },
   {  
     "class_name":"sprite-external_update",
     "description":"",
-    "usage":"",
+    "usage":"Send, submit",
     "notes":""
   },
   {  
     "class_name":"sprite-field-changed-flag",
     "description":"",
-    "usage":"",
+    "usage":"Flag",
     "notes":""
   },
   {  
@@ -710,13 +710,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-gauge",
     "description":"",
-    "usage":"",
+    "usage":"Accelerate, Coupa Accelerate",
     "notes":""
   },
   {  
     "class_name":"sprite-grid",
     "description":"",
-    "usage":"",
+    "usage":"In data table view buttons to switch from lines to card view",
     "notes":""
   },
   {  
@@ -728,25 +728,25 @@ var actionIcons = [
   {  
     "class_name":"sprite-health_rating0",
     "description":"",
-    "usage":"",
+    "usage":"Supplier Health No Data Available",
     "notes":""
   },
   {  
     "class_name":"sprite-health_rating1",
     "description":"",
-    "usage":"",
+    "usage":"Supplier Health High Risk",
     "notes":""
   },
   {  
     "class_name":"sprite-health_rating2",
     "description":"",
-    "usage":"",
+    "usage":"Supplier Health Trusted",
     "notes":""
   },
   {  
     "class_name":"sprite-health_rating3",
     "description":"",
-    "usage":"",
+    "usage":"Supplier Health Best in Class",
     "notes":""
   },
   {  
@@ -758,13 +758,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-info",
     "description":"",
-    "usage":"",
+    "usage":"Information, Help",
     "notes":""
   },
   {  
     "class_name":"sprite-info_add",
     "description":"",
-    "usage":"",
+    "usage":"Information, Help",
     "notes":""
   },
   {  
@@ -776,25 +776,25 @@ var actionIcons = [
   {  
     "class_name":"sprite-invisible",
     "description":"",
-    "usage":"",
+    "usage":"Invisible, disabled, inactive",
     "notes":""
   },
   {  
     "class_name":"sprite-invoicesmash",
     "description":"",
-    "usage":"",
+    "usage":"Invoicing, Invoice Smash",
     "notes":""
   },
   {  
     "class_name":"sprite-items_not_in_lots",
     "description":"",
-    "usage":"",
+    "usage":"Sourcing, Items not in Lots",
     "notes":""
   },
   {  
     "class_name":"sprite-key_go",
     "description":"",
-    "usage":"",
+    "usage":"Setup, Users, Reset Password",
     "notes":""
   },
   {  
@@ -830,31 +830,31 @@ var actionIcons = [
   {  
     "class_name":"sprite-list",
     "description":"",
-    "usage":"",
+    "usage":"In data table view buttons to switch from lines to card view",
     "notes":""
   },
   {  
     "class_name":"sprite-lock",
     "description":"",
-    "usage":"",
+    "usage":"Locked",
     "notes":""
   },
   {  
     "class_name":"sprite-lock_blue",
     "description":"",
-    "usage":"",
+    "usage":"Locked",
     "notes":""
   },
   {  
     "class_name":"sprite-lock_break",
     "description":"",
-    "usage":"",
+    "usage":"Locked",
     "notes":""
   },
   {  
     "class_name":"sprite-lock_go",
     "description":"",
-    "usage":"",
+    "usage":"Locked",
     "notes":""
   },
   {  
@@ -866,61 +866,61 @@ var actionIcons = [
   {  
     "class_name":"sprite-lorry",
     "description":"",
-    "usage":"",
+    "usage":"Receive",
     "notes":""
   },
   {  
     "class_name":"sprite-lorry_bw",
     "description":"",
-    "usage":"",
+    "usage":"Receive",
     "notes":""
   },
   {  
     "class_name":"sprite-magic",
     "description":"",
-    "usage":"",
+    "usage":"Split Billing",
     "notes":""
   },
   {  
     "class_name":"sprite-magic_add",
     "description":"",
-    "usage":"",
+    "usage":"Split Billing",
     "notes":""
   },
   {  
     "class_name":"sprite-magnifier",
     "description":"",
-    "usage":"",
+    "usage":"Search",
     "notes":""
   },
   {  
     "class_name":"sprite-magnifier_small",
     "description":"",
-    "usage":"",
+    "usage":"Search",
     "notes":""
   },
   {  
     "class_name":"sprite-magnifier_small_grey",
     "description":"",
-    "usage":"",
+    "usage":"Search Disabled",
     "notes":""
   },
   {  
     "class_name":"sprite-magnifier_small_grey",
     "description":"",
-    "usage":"",
+    "usage":"Search Disabled",
     "notes":""
   },
   {  
     "class_name":"sprite-master",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
     "class_name":"sprite-medal_gold_3",
     "description":"",
-    "usage":"",
+    "usage":"Award",
     "notes":""
   },
   {  
@@ -932,13 +932,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-money",
     "description":"",
-    "usage":"",
+    "usage":"Service",
     "notes":""
   },
   {  
     "class_name":"sprite-money_add",
     "description":"",
-    "usage":"",
+    "usage":"Search Disabled",
     "notes":""
   },
   {  
@@ -950,109 +950,109 @@ var actionIcons = [
   {  
     "class_name":"sprite-no",
     "description":"",
-    "usage":"",
+    "usage":"Not Enabled, missing, not available",
     "notes":""
   },
   {  
     "class_name":"sprite-no_self_approval_allowed",
     "description":"",
-    "usage":"",
+    "usage":"Lock",
     "notes":""
   },
   {  
     "class_name":"sprite-note",
     "description":"",
-    "usage":"",
+    "usage":"Note, Add Note",
     "notes":""
   },
   {  
     "class_name":"sprite-operational-insights",
     "description":"",
-    "usage":"",
+    "usage":"Tertiary Header Icon Operationa Insights",
     "notes":""
   },
   {  
     "class_name":"sprite-package",
     "description":"",
-    "usage":"",
+    "usage":"Detail Receive",
     "notes":""
   },
   {  
     "class_name":"sprite-package_add",
     "description":"",
-    "usage":"",
+    "usage":"Detail Receive",
     "notes":""
   },
   {  
     "class_name":"sprite-page_add",
     "description":"",
-    "usage":"",
+    "usage":"Add Bid, Act as Supplier to add bid",
     "notes":""
   },
   {  
     "class_name":"sprite-page_blank",
     "description":"",
-    "usage":"",
+    "usage":"Document",
     "notes":""
   },
   {  
     "class_name":"sprite-page_code",
     "description":"",
-    "usage":"",
+    "usage":"Document",
     "notes":""
   },
   {  
     "class_name":"sprite-page_copy",
     "description":"",
-    "usage":"",
+    "usage":"Copy",
     "notes":""
   },
   {  
     "class_name":"sprite-page_copy_bw",
     "description":"",
-    "usage":"",
+    "usage":"Copy Disabled",
     "notes":""
   },
   {  
     "class_name":"sprite-page_excel",
     "description":"",
-    "usage":"",
+    "usage":"Document",
     "notes":""
   },
   {  
     "class_name":"sprite-page_white_acrobat",
     "description":"",
-    "usage":"",
+    "usage":"Document",
     "notes":""
   },
   {  
     "class_name":"sprite-page_word",
     "description":"",
-    "usage":"",
+    "usage":"Document",
     "notes":""
   },
   {  
     "class_name":"sprite-pencil",
     "description":"",
-    "usage":"",
+    "usage":"Edit",
     "notes":""
   },
   {  
     "class_name":"sprite-pencil_bw",
     "description":"",
-    "usage":"",
+    "usage":"Edit",
     "notes":""
   },
   {  
     "class_name":"sprite-pencil_small",
     "description":"",
-    "usage":"",
+    "usage":"Edit",
     "notes":""
   },
   {  
     "class_name":"sprite-pending_approval",
     "description":"",
-    "usage":"",
+    "usage":"Pending Approval",
     "notes":""
   },
   {  
@@ -1064,13 +1064,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-po-invoice-stop",
     "description":"",
-    "usage":"",
+    "usage":"Stop Invoice",
     "notes":""
   },
   {  
     "class_name":"sprite-po-release-invoice-stop",
     "description":"",
-    "usage":"",
+    "usage":"Release Invoice Hold",
     "notes":""
   },
   {  
@@ -1088,25 +1088,25 @@ var actionIcons = [
   {  
     "class_name":"sprite-pop-out",
     "description":"",
-    "usage":"",
+    "usage":"Full screen, pop out as a separate window",
     "notes":""
   },
   {  
     "class_name":"sprite-price_tier",
     "description":"",
-    "usage":"",
+    "usage":"Tiered Pricing",
     "notes":""
   },
   {  
     "class_name":"sprite-printer",
     "description":"",
-    "usage":"",
+    "usage":"Print",
     "notes":""
   },
   {  
     "class_name":"sprite-printer_small",
     "description":"",
-    "usage":"",
+    "usage":"Print",
     "notes":""
   },
   {  
@@ -1118,7 +1118,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-red-flag",
     "description":"",
-    "usage":"",
+    "usage":"Flag",
     "notes":""
   },
   {  
@@ -1130,7 +1130,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-resource",
     "description":"",
-    "usage":"",
+    "usage":"Resource, human",
     "notes":""
   },
   {  
@@ -1142,25 +1142,25 @@ var actionIcons = [
   {  
     "class_name":"sprite-searchable-punchout",
     "description":"",
-    "usage":"",
+    "usage":"Searchable Punchout",
     "notes":""
   },
   {  
     "class_name":"sprite-ship-to",
     "description":"",
-    "usage":"",
+    "usage":"Ships to, ship to countires, ship to areas",
     "notes":""
   },
   {  
     "class_name":"sprite-sourcing",
     "description":"",
-    "usage":"",
+    "usage":"Sourcing, Source This, Send to RFQ",
     "notes":""
   },
   {  
     "class_name":"sprite-stop",
     "description":"",
-    "usage":"",
+    "usage":"Invoice Hold",
     "notes":""
   },
   {  
