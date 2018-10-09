@@ -14,31 +14,31 @@ var actionIcons = [
   {  
     "class_name":"sprite-account_split",
     "description":"",
-    "usage":"",
+    "usage":"Billing Account",
     "notes":""
   },
   {  
     "class_name":"sprite-account_split_add",
     "description":"",
-    "usage":"",
+    "usage":"Billing Account",
     "notes":""
   },
   {  
     "class_name":"sprite-account_split_edit",
     "description":"",
-    "usage":"",
+    "usage":"Billing Account",
     "notes":""
   },
   {  
     "class_name":"sprite-add",
     "description":"",
-    "usage":"",
-    "notes":"This also means ADD NEW"
+    "usage":"Add New",
+    "notes":""
   },
   {  
     "class_name":"sprite-add_bw",
     "description":"",
-    "usage":"",
+    "usage":"Add New Disabled",
     "notes":""
   },
   {  
@@ -50,7 +50,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-amendment",
     "description":"",
-    "usage":"",
+    "usage":"Contracts",
     "notes":""
   },
   {  
@@ -98,13 +98,13 @@ var actionIcons = [
   {  
     "class_name":"sprite-approved",
     "description":"",
-    "usage":"",
+    "usage":"Done, Approved, Completed",
     "notes":""
   },
   {  
     "class_name":"sprite-arrow_down_gray",
     "description":"",
-    "usage":"",
+    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboards",
     "notes":""
   },
   {  
@@ -116,7 +116,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-arrow_left_gray",
     "description":"",
-    "usage":"",
+    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboards",
     "notes":""
   },
   {  
@@ -140,7 +140,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-arrow_rotate_right",
     "description":"",
-    "usage":"",
+    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboards",
     "notes":""
   },
   {  
@@ -164,7 +164,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-arrow_up_gray",
     "description":"",
-    "usage":"",
+    "usage":"Use to expand, collapse, scroll to the Left or right in sections and dashboards",
     "notes":""
   },
   {  
@@ -188,7 +188,7 @@ var actionIcons = [
   {  
     "class_name":"sprite-basket",
     "description":"",
-    "usage":"",
+    "usage":"Item",
     "notes":""
   },
   {  
